@@ -158,7 +158,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def FedenaConfiguration_settings_for_hr
+  def configuration_settings_for_hr
     hr = FedenaConfiguration.find_by_config_value("HR")
     if hr.nil?
       redirect_to :controller => 'user', :action => 'dashboard'
@@ -168,7 +168,7 @@ class ApplicationController < ActionController::Base
 
 
 
-  def FedenaConfiguration_settings_for_finance
+  def configuration_settings_for_finance
     finance = FedenaConfiguration.find_by_config_value("Finance")
     if finance.nil?
       redirect_to :controller => 'user', :action => 'dashboard'

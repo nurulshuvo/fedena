@@ -17,7 +17,7 @@
 #limitations under the License.
 
 class EmployeeController < ApplicationController
-  before_filter :login_required,:FedenaConfiguration_settings_for_hr
+  before_filter :login_required, :configuration_settings_for_hr
   filter_access_to :all
   before_filter :protect_other_employee_data, :only => [:individual_payslip_pdf,:timetable,:timetable_pdf,:profile_payroll_details,\
       :view_payslip ]

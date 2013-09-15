@@ -26,7 +26,7 @@
   <% if @current_user.admin? %>
     <li class="a"><%= link_to "#{t('attendance')} ▼", :controller => "student_attendance", :action => "index" %>
       <ul class="level-1">
-        <li><%= link_to "#{t('attendance_register')}", :controller => 'attendances', :action => 'index'  %></li>
+        <li><%= link_to "#{t('attendance_register')}", :controller => 'attendances', :action => 'index', remote: true  %></li>
         <li><%= link_to "#{t('attendance_report')}", :controller => "attendance_reports", :action => "index" %></li>
       </ul>
     </li>

@@ -17,6 +17,7 @@
 #limitations under the License.
 
 class AttendancesController < ApplicationController
+
   before_filter :login_required
   filter_access_to :all
   before_filter :only_assigned_employee_allowed, :except => 'index'
@@ -72,24 +73,25 @@ class AttendancesController < ApplicationController
     start_date = @today.beginning_of_month
     end_date = @today.end_of_month
     if @config.config_value == 'Daily'
-      @batch = Batch.find(params[:batch_id])
-      @students = Student.find_all_by_batch_id(@batch.id)
-      #      @dates = ((@batch.end_date.to_date > @today.end_of_month) ? (@today.beginning_of_month..@today.end_of_month) : (@today.beginning_of_month..@batch.end_date.to_date))
-      @dates=@batch.working_days(@today)
+      @batch = Batch.find(params[:batch_id]) rescue nil
+      @students = Student.find_all_by_batch_id(@batch.id) rescue nil
+      @dates=@batch.working_days(@today) rescue nil
     else
-      @sub =Subject.find params[:subject_id]
-      @batch=Batch.find(@sub.batch_id)
+      @sub =Subject.find params[:subject_id] rescue nil
+      @batch=Batch.find(@sub.batch_id) rescue nil
       unless @sub.elective_group_id.nil?
-        elective_student_ids = StudentsSubject.find_all_by_subject_id(@sub.id).map { |x| x.student_id }
-        @students = Student.find_all_by_batch_id(@batch, :conditions=>"FIND_IN_SET(id,\"#{elective_student_ids.split.join(',')}\")")
+        elective_student_ids = StudentsSubject.find_all_by_subject_id(@sub.id).map { |x| x.student_id } rescue []
+        @students = Student.find_all_by_batch_id(@batch, :conditions=>"FIND_IN_SET(id,\"#{elective_student_ids.split.join(',')}\")") rescue []
       else
-        @students = Student.find_all_by_batch_id(@batch)
+        @students = Student.find_all_by_batch_id(@batch) rescue nil
       end
-      @dates=Timetable.tte_for_range(@batch,@today,@sub)
-      @dates_key=@dates.keys - @batch.holiday_event_dates
+      @dates=Timetable.tte_for_range(@batch,@today,@sub) rescue nil
+      @dates_key=@dates.keys - @batch.holiday_event_dates rescue nil
+
     end
+
     respond_to do |format|
-      format.js { render :action => 'show' }
+      format.js
     end
   end
 
