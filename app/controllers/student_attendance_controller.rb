@@ -26,7 +26,7 @@ class StudentAttendanceController < ApplicationController
   end
 
   def student
-    @config = Configuration.find_by_config_key('StudentAttendanceType')
+    @config = FedenaConfiguration.find_by_config_key('StudentAttendanceType')
     @student = Student.find(params[:id])
     @batch = Batch.find(@student.batch_id)
     @subjects = Subject.find_all_by_batch_id(@batch.id,:conditions=>'is_deleted = false')
@@ -126,7 +126,7 @@ class StudentAttendanceController < ApplicationController
   end
 
   def student_report
-    @config = Configuration.find_by_config_key('StudentAttendanceType')
+    @config = FedenaConfiguration.find_by_config_key('StudentAttendanceType')
     @student = Student.find(params[:id])
     @batch = Batch.find(params[:year])
     @start_date = @batch.start_date.to_date

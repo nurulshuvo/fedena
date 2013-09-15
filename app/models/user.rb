@@ -22,10 +22,6 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :username, :scope=> [:is_deleted],:if=> 'is_deleted == false' #, :email
   validates_length_of     :username, :within => 1..20
   validates_length_of     :password, :within => 4..40, :allow_nil => true
-  validates_format_of     :username, :with => /^[A-Z0-9_-]*$/i,
-    :message => "#{t('must_contain_only_letters')}"
-  validates_format_of     :email, :with => /^[A-Z0-9._%-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i,   :allow_blank=>true,
-    :message => "#{t('must_be_a_valid_email_address')}"
   validates_presence_of   :role , :on=>:create
   validates_presence_of   :password, :on => :create
 
@@ -35,12 +31,12 @@ class User < ActiveRecord::Base
   has_one :student_record,:class_name=>"Student",:foreign_key=>"user_id"
   has_one :employee_record,:class_name=>"Employee",:foreign_key=>"user_id"
 
-  named_scope :active, :conditions => { :is_deleted => false }
-  named_scope :inactive, :conditions => { :is_deleted => true }
+  scope :active, :conditions => { :is_deleted => false }
+  scope :inactive, :conditions => { :is_deleted => true }
 
   def before_save
     self.salt = random_string(8) if self.salt == nil
-    self.hashed_password = Digest::SHA1.hexdigest(self.salt + self.password) unless self.password.nil?
+    self.hashed_password = Digest::SHA1.hexdigesI18n.t(self.salt + self.password) unless self.password.nil?
     if self.new_record?
       self.admin, self.student, self.employee = false, false, false
       self.admin    = true if self.role == 'Admin'
@@ -69,7 +65,7 @@ class User < ActiveRecord::Base
 
   def self.authenticate?(username, password)
     u = User.find_by_username username
-    u.hashed_password == Digest::SHA1.hexdigest(u.salt + password)
+    u.hashed_password == Digest::SHA1.hexdigesI18n.t(u.salt + password)
   end
 
   def random_string(len)
@@ -80,10 +76,10 @@ class User < ActiveRecord::Base
   end
 
   def role_name
-    return "#{t('admin')}" if self.admin?
-    return "#{t('student_text')}" if self.student?
-    return "#{t('employee_text')}" if self.employee?
-    return "#{t('parent')}" if self.parent?
+    return "#{I18n.t('admin')}" if self.admin?
+    return "#{I18n.t('student_text')}" if self.student?
+    return "#{I18n.t('employee_text')}" if self.employee?
+    return "#{I18n.t('parent')}" if self.parent?
     return nil
   end
 
@@ -99,10 +95,10 @@ class User < ActiveRecord::Base
       employee = employee_record
       unless employee.nil?
         if employee.subjects.present?
-          prv << :subject_attendance if Configuration.get_config_value('StudentAttendanceType') == 'SubjectWise'
+          prv << :subject_attendance if FedenaConfiguration.get_config_value('StudentAttendanceType') == 'SubjectWise'
           prv << :subject_exam
         end
-        if Batch.active.collect(&:employee_id).include?(employee.id.to_s)
+        if Batch.active.collecI18n.t(&:employee_id).include?(employee.id.to_s)
           prv << :view_results
         end
       end
@@ -124,7 +120,7 @@ class User < ActiveRecord::Base
   end
 
   def has_subject_in_batch(b)
-    employee_record.subjects.collect(&:batch_id).include? b.id
+    employee_record.subjects.collecI18n.t(&:batch_id).include? b.id
   end
 
   def days_events(date)
@@ -170,7 +166,7 @@ class User < ActiveRecord::Base
       all_events+= Event.all(:conditions=>["(? < date(events.end_date)) and is_exam = true",date],:order=>"start_date")
       all_events+= Event.all(:conditions=>["(? < date(events.end_date)) and is_common = true",date],:order=>"start_date")
     end
-    start_date=all_events.collect(&:start_date).min
+    start_date=all_events.collecI18n.t(&:start_date).min
     unless start_date
       return ""
     else

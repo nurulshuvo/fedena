@@ -32,7 +32,7 @@
     <p class="flash-msg"> <%= flash[:notice] %> </p>
   <% end %>
   <div class="bread_crumb">
-    <%= link_to t('configuration_text'), :controller => "configuration", :action=>"index" %> &raquo;
+    <%= link_to t('FedenaConfiguration_text'), :controller => "FedenaConfiguration", :action=>"index" %> &raquo;
     <%= link_to "#{t('courses_text')}", :controller => "courses", :action => "index" %> &raquo;
     <%= link_to "#{t('manage_batch')}", :controller => "courses", :action => "manage_batches" %> &raquo;
     <%= t('batch_transfer') %>

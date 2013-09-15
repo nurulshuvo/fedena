@@ -41,10 +41,10 @@ class StudentController < ApplicationController
 
   def admission1
     @student = Student.new(params[:student])
-    @selected_value = Configuration.default_country 
+    @selected_value = FedenaConfiguration.default_country
     @application_sms_enabled = SmsSetting.find_by_settings_key("ApplicationEnabled")
     @last_admitted_student = Student.find(:last)
-    @config = Configuration.find_by_config_key('AdmissionNumberAutoIncrement')
+    @config = FedenaConfiguration.find_by_config_key('AdmissionNumberAutoIncrement')
     @categories = StudentCategory.active
     if request.post?
       if @config.config_value.to_i == 1
@@ -563,7 +563,7 @@ class StudentController < ApplicationController
     @current_user = current_user
     @address = @student.address_line1.to_s + ' ' + @student.address_line2.to_s
     @additional_fields = StudentAdditionalField.all(:conditions=>"status = true")
-    @sms_module = Configuration.available_modules
+    @sms_module = FedenaConfiguration.available_modules
     @sms_setting = SmsSetting.new
     @previous_data = StudentPreviousData.find_by_student_id(@student.id)
     @immediate_contact = Guardian.find(@student.immediate_contact_id) \
@@ -575,7 +575,7 @@ class StudentController < ApplicationController
     @student = Student.find(params[:id])
     @address = @student.address_line1.to_s + ' ' + @student.address_line2.to_s
     @additional_fields = StudentAdditionalField.all(:conditions=>"status = true")
-    @sms_module = Configuration.available_modules
+    @sms_module = FedenaConfiguration.available_modules
     @sms_setting = SmsSetting.new
     @previous_data = StudentPreviousData.find_by_student_id(@student.id)
     @immediate_contact = Guardian.find(@student.immediate_contact_id) \
@@ -1021,7 +1021,7 @@ class StudentController < ApplicationController
 
     @fee_category = FinanceFeeCategory.find(@fee_collection.fee_category_id,:conditions => ["is_deleted = false"])
     @fee_particulars = @fee_collection.fees_particulars(@student)
-    @currency_type = Configuration.find_by_config_key("CurrencyType").config_value
+    @currency_type = FedenaConfiguration.find_by_config_key("CurrencyType").config_value
 
     @batch_discounts = BatchFeeCollectionDiscount.find_all_by_finance_fee_collection_id(@fee_collection.id)
     @student_discounts = StudentFeeCollectionDiscount.find_all_by_finance_fee_collection_id_and_receiver_id(@fee_collection.id,@student.id)

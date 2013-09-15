@@ -312,7 +312,7 @@ class ExamController < ApplicationController
   end
 
   def generated_report_pdf
-    @config = Configuration.get_config_value('InstitutionName')
+    @config = FedenaConfiguration.get_config_value('InstitutionName')
     @exam_group = ExamGroup.find(params[:exam_group])
     @batch = Batch.find(params[:batch])
     @students = @batch.students.by_first_name
@@ -1293,7 +1293,7 @@ class ExamController < ApplicationController
     @ordered_students.each do|s|
       @students.push s[2]
     end
-    @config = Configuration.get_config_value('ExamResultType') || 'Marks'
+    @config = FedenaConfiguration.get_config_value('ExamResultType') || 'Marks'
 
     @grades = @batch.grading_level_list
   end

@@ -23,7 +23,7 @@ class AttendancesController < ApplicationController
   before_filter :only_privileged_employee_allowed, :only => 'index'
   before_filter :default_time_zone_present_time
   def index
-    @config = Configuration.find_by_config_key('StudentAttendanceType')
+    @config = FedenaConfiguration.find_by_config_key('StudentAttendanceType')
     @date_today = @local_tzone_time.to_date
     if current_user.admin?
       @batches = Batch.active
@@ -63,7 +63,7 @@ class AttendancesController < ApplicationController
   end
 
   def show
-    @config = Configuration.find_by_config_key('StudentAttendanceType')
+    @config = FedenaConfiguration.find_by_config_key('StudentAttendanceType')
     unless params[:next].nil?
       @today = params[:next].to_date
     else
@@ -172,7 +172,7 @@ class AttendancesController < ApplicationController
   end
   
   def new
-    @config = Configuration.find_by_config_key('StudentAttendanceType')
+    @config = FedenaConfiguration.find_by_config_key('StudentAttendanceType')
     if @config.config_value=='Daily'
       @student = Student.find(params[:id])
       @month_date = params[:date]
@@ -188,7 +188,7 @@ class AttendancesController < ApplicationController
   end
 
   def create
-    @config = Configuration.find_by_config_key('StudentAttendanceType')
+    @config = FedenaConfiguration.find_by_config_key('StudentAttendanceType')
     if @config.config_value=="SubjectWise"
       @student = Student.find(params[:subject_leave][:student_id])
       @tte=TimetableEntry.find(params[:timetable_entry])
@@ -243,7 +243,7 @@ class AttendancesController < ApplicationController
   end
 
   def edit
-    @config = Configuration.find_by_config_key('StudentAttendanceType')
+    @config = FedenaConfiguration.find_by_config_key('StudentAttendanceType')
     if @config.config_value=='Daily'
       @absentee = Attendance.find params[:id]
     else
@@ -257,7 +257,7 @@ class AttendancesController < ApplicationController
   end
 
   def update
-    @config = Configuration.find_by_config_key('StudentAttendanceType')
+    @config = FedenaConfiguration.find_by_config_key('StudentAttendanceType')
     if @config.config_value=='Daily'
       @absentee = Attendance.find params[:id]
       @student = Student.find(@absentee.student_id)
@@ -280,7 +280,7 @@ class AttendancesController < ApplicationController
 
 
   def destroy
-    @config = Configuration.find_by_config_key('StudentAttendanceType')
+    @config = FedenaConfiguration.find_by_config_key('StudentAttendanceType')
     if @config.config_value=='Daily'
       @absentee = Attendance.find params[:id]
     else

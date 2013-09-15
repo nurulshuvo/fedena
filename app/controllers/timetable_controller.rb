@@ -476,7 +476,7 @@ class TimetableController < ApplicationController
     @subjects = @batches.collect(&:subjects).flatten
   end
   def timetable
-    @config = Configuration.available_modules
+    @config = FedenaConfiguration.available_modules
     @batches = Batch.active
     unless params[:next].nil?
       @today = params[:next].to_date

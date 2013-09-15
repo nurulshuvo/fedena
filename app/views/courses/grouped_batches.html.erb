@@ -27,7 +27,7 @@
 </div>
 <div id="page-yield">
   <div class="bread_crumb">
-    <%= link_to t('configuration_text'), :controller => "configuration", :action=>"index" %> &raquo;
+    <%= link_to t('FedenaConfiguration_text'), :controller => "FedenaConfiguration", :action=>"index" %> &raquo;
     <%= link_to "#{t('courses_text')}", :controller => "courses", :action => "index" %> &raquo;
     <%= link_to "#{t('manage_course')}", :controller => "courses", :action => "manage_course" %> &raquo;
     <%= link_to "#{@course.full_name}", :controller => "courses", :action => "show", :id=>@course.id %> &raquo;
@@ -48,7 +48,7 @@
         </div>
         <div class="grades">
         <div class="label-field-pair">
-          <label for="configuration_grading_systems">Select Batches :</label>
+          <label for="FedenaConfiguration_grading_systems">Select Batches :</label>
         </div>
         <div class="fee_category_scroll">
           <div class="sel-list">

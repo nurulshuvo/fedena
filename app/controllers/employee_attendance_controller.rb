@@ -17,7 +17,7 @@
 #limitations under the License.
 
 class EmployeeAttendanceController < ApplicationController
-  before_filter :login_required,:configuration_settings_for_hr
+  before_filter :login_required,:FedenaConfiguration_settings_for_hr
   before_filter :protect_leave_dashboard, :only => [:leaves]#, :employee_attendance_pdf]
   before_filter :protect_applied_leave, :only => [:own_leave_application, :cancel_application]
   before_filter :protect_manager_leave_application_view, :only => [:leave_application]
@@ -67,15 +67,15 @@ class EmployeeAttendanceController < ApplicationController
   end
 
   def leave_reset_settings
-    #  @config = Configuration.get_multiple_configs_as_hash ['AutomaticLeaveReset', 'LeaveResetPeriod', 'LastAutoLeaveReset']
-    @auto_reset = Configuration.find_by_config_key('AutomaticLeaveReset')
-    @reset_period = Configuration.find_by_config_key('LeaveResetPeriod')
-    @last_reset = Configuration.find_by_config_key('LastAutoLeaveReset')
-    @fin_start_date = Configuration.find_by_config_key('FinancialYearStartDate')
+    #  @config = FedenaConfiguration.get_multiple_configs_as_hash ['AutomaticLeaveReset', 'LeaveResetPeriod', 'LastAutoLeaveReset']
+    @auto_reset = FedenaConfiguration.find_by_config_key('AutomaticLeaveReset')
+    @reset_period = FedenaConfiguration.find_by_config_key('LeaveResetPeriod')
+    @last_reset = FedenaConfiguration.find_by_config_key('LastAutoLeaveReset')
+    @fin_start_date = FedenaConfiguration.find_by_config_key('FinancialYearStartDate')
     if request.post?
-      @auto_reset.update_attributes(:config_value=> params[:configuration][:automatic_leave_reset])
-      @reset_period.update_attributes(:config_value=> params[:configuration][:leave_reset_period])
-      @last_reset.update_attributes(:config_value=> params[:configuration][:financial_year_start_date])
+      @auto_reset.update_attributes(:config_value=> params[:FedenaConfiguration][:automatic_leave_reset])
+      @reset_period.update_attributes(:config_value=> params[:FedenaConfiguration][:leave_reset_period])
+      @last_reset.update_attributes(:config_value=> params[:FedenaConfiguration][:financial_year_start_date])
 
             flash[:notice] = t('flash_msg8')
         end

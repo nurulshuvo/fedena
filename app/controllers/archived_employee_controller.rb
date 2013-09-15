@@ -18,7 +18,7 @@
 
 class ArchivedEmployeeController < ApplicationController
 
-  before_filter :login_required,:configuration_settings_for_hr
+  before_filter :login_required,:FedenaConfiguration_settings_for_hr
   filter_access_to :all
 #  prawnto :prawn => {:left_margin => 25, :right_margin => 25}
 
@@ -95,7 +95,7 @@ class ArchivedEmployeeController < ApplicationController
 
 
   def profile_payroll_details
-    @currency_type = Configuration.find_by_config_key("CurrencyType").config_value
+    @currency_type = FedenaConfiguration.find_by_config_key("CurrencyType").config_value
     @employee = ArchivedEmployee.find(params[:id])
     @payroll_details = ArchivedEmployeeSalaryStructure.find_all_by_employee_id(@employee, :order=>"payroll_category_id ASC")
     render :partial => "payroll_details"

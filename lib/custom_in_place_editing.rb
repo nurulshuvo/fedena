@@ -32,7 +32,7 @@ module CustomInPlaceEditing
         else
           render :update do |page|
             page.alert(@item.errors.full_messages.join("\n"))
-            klass.query_cache.clear_query_cache if klass.method_defined?:query_cache
+            klass.query_cache.clear_query_cache if klass.method_defined? :query_cache
             @item.reload
             page.replace_html("#{object}_#{attribute}_#{params[:id]}_edit",
               @item.send(attribute))

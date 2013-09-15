@@ -56,7 +56,7 @@
         :class => "option_buttons", :id => "student_attendance_button", :title => t('attendance_link_title')  %>
     </div>
     <div class="button-box">
-      <%= link_to "<div class ='button-label'><p>#{t('settings')}</p></div>", {:controller => "configuration", :action => "index"},
+      <%= link_to "<div class ='button-label'><p>#{t('settings')}</p></div>", {:controller => "FedenaConfiguration", :action => "index"},
         :class => "option_buttons", :id => "settings_button", :title => t('setting_link_title') %>
     </div>
 
@@ -200,7 +200,7 @@
           </div>
         <% end %>
       <% else %>
-        <% @attendance_type = Configuration.find_by_config_key('StudentAttendanceType') %>
+        <% @attendance_type = FedenaConfiguration.find_by_config_key('StudentAttendanceType') %>
         <% unless @attendance_type.config_value == 'Daily' %>
           <div class="button-box">
             <%= link_to "<div class ='button-label'><p>#{t('attendance')}</p></div>", {:controller => "student_attendance", :action => "index"},
@@ -228,9 +228,9 @@
       </div>
     <%end%>
 
-    <% if permitted_to? :index, :configuration %>
+    <% if permitted_to? :index, :FedenaConfiguration %>
       <div class="button-box">
-        <%= link_to "<div class ='button-label'><p>#{t('settings')}</p></div>", {:controller => "configuration", :action => "index"},
+        <%= link_to "<div class ='button-label'><p>#{t('settings')}</p></div>", {:controller => "FedenaConfiguration", :action => "index"},
           :class => "option_buttons", :id => "settings_button", :title => t('setting_link_title') %>
       </div>
     <% end %>

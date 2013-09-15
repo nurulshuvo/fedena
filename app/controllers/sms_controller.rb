@@ -233,7 +233,7 @@ class SmsController < ApplicationController
 
   def show_sms_messages
     @sms_messages = SmsMessage.get_sms_messages(params[:page])
-    @total_sms = Configuration.get_config_value("TotalSmsCount")
+    @total_sms = FedenaConfiguration.get_config_value("TotalSmsCount")
   end
 
   def show_sms_logs

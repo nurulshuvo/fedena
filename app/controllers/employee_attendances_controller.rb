@@ -17,7 +17,7 @@
 #limitations under the License.
 
 class EmployeeAttendancesController < ApplicationController
-  before_filter :login_required,:configuration_settings_for_hr
+  before_filter :login_required,:FedenaConfiguration_settings_for_hr
   filter_access_to :all
   
   def index
