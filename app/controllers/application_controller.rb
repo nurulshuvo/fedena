@@ -15,6 +15,8 @@ class ApplicationController < ActionController::Base
 
 
 
+
+
   def login_check
     if session[:user_id].present?
       unless (controller_name == "user") and ["first_login_change_password","login","logout","forgot_password"].include? action_name
@@ -121,6 +123,7 @@ class ApplicationController < ActionController::Base
 
   def initialize
     @title = FedenaSetting.company_details[:company_name]
+    super
   end
 
   def message_user
@@ -326,9 +329,7 @@ class ApplicationController < ActionController::Base
     News.new.reload_news_bar
   end
 
-  def layout_rendering
-    render layout: choose_layout
-  end
+
 
   def choose_layout
     return "login" if action_name == 'login' or action_name == 'set_new_password'

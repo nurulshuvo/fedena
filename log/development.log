@@ -18699,3 +18699,440 @@ Started GET "/assets/jquery/jquery-ui.min.js?body=1" for 127.0.0.1 at 2013-09-16
 
 
 Started GET "/assets/jquery/jquery.hotkeys.js?body=1" for 127.0.0.1 at 2013-09-16 00:00:55 +0600
+
+
+Started GET "/user/dashboard" for 127.0.0.1 at 2013-09-16 01:44:32 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UserController#dashboard as HTML
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+  [1m[35mUser Load (2.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'Locale' LIMIT 1
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:News> at /home/irfan/Desktop/esp/fedena/app/models/news.rb:27)
+  [1m[36mFedenaConfiguration Load (0.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'StudentAttendanceType' LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'
+  [1m[36mEmployee Load (2.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`user_id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (2.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from get_latest at /home/irfan/Desktop/esp/fedena/app/models/news.rb:34)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from get_latest at /home/irfan/Desktop/esp/fedena/app/models/news.rb:34)
+  [1m[36mNews Load (6.0ms)[0m  [1mSELECT `news`.* FROM `news` ORDER BY created_at DESC LIMIT 3[0m
+  Rendered user/_news_bar.html.erb (12.3ms)
+  Rendered user/dashboard.erb within layouts/dashboard (115.8ms)
+  [1m[35mSchoolDetail Load (1.9ms)[0m  SELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from check_reminders at /home/irfan/Desktop/esp/fedena/app/models/user.rb:60)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from check_reminders at /home/irfan/Desktop/esp/fedena/app/models/user.rb:60)
+  [1m[36mReminder Load (0.1ms)[0m  [1mSELECT `reminders`.* FROM `reminders` WHERE (recipient = '1')[0m
+  Rendered layouts/_reminder_count.html.erb (19.6ms)
+  Rendered layouts/_autosuggest_menu.html.erb (19.1ms)
+Completed 200 OK in 2246ms (Views: 554.1ms | ActiveRecord: 38.0ms)
+
+
+Started GET "/assets/_layouts/dashboard.css?body=1" for 127.0.0.1 at 2013-09-16 01:44:36 +0600
+
+
+Started GET "/stylesheets/%5B%5D.css" for 127.0.0.1 at 2013-09-16 01:44:37 +0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/%5B%5D.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (38.5ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (85.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (481.3ms)
+
+
+Started GET "/assets/calendar.css?body=1" for 127.0.0.1 at 2013-09-16 01:44:37 +0600
+
+
+Started GET "/assets/autosuggest-menu.css?body=1" for 127.0.0.1 at 2013-09-16 01:44:37 +0600
+
+
+Started GET "/assets/user/dashboard.css?body=1" for 127.0.0.1 at 2013-09-16 01:44:37 +0600
+
+
+Started GET "/assets/modalbox.css?body=1" for 127.0.0.1 at 2013-09-16 01:44:37 +0600
+
+
+Started GET "/assets/_styles/ui.all.css?body=1" for 127.0.0.1 at 2013-09-16 01:44:37 +0600
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2013-09-16 01:44:38 +0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (46.1ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (346.9ms)
+
+
+Started GET "/assets/scripts/nicetitle.js?body=1" for 127.0.0.1 at 2013-09-16 01:44:38 +0600
+
+
+Started GET "/assets/droplicious.js?body=1" for 127.0.0.1 at 2013-09-16 01:44:38 +0600
+
+
+Started GET "/assets/fckeditor/fckeditor.js?body=1" for 127.0.0.1 at 2013-09-16 01:44:38 +0600
+
+
+Started GET "/assets/builder.js?body=1" for 127.0.0.1 at 2013-09-16 01:44:38 +0600
+
+
+Started GET "/assets/modalbox.js?body=1" for 127.0.0.1 at 2013-09-16 01:44:38 +0600
+
+
+Started GET "/assets/jquery/jquery.min.js?body=1" for 127.0.0.1 at 2013-09-16 01:44:38 +0600
+
+
+Started GET "/assets/jquery/jquery-ui.min.js?body=1" for 127.0.0.1 at 2013-09-16 01:44:38 +0600
+
+
+Started GET "/assets/jquery/jquery.hotkeys.js?body=1" for 127.0.0.1 at 2013-09-16 01:44:38 +0600
+
+
+Started GET "/exam/index" for 127.0.0.1 at 2013-09-16 01:44:41 +0600
+Processing by ExamController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'Locale' LIMIT 1
+  [1m[36mFedenaConfiguration Load (0.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'StudentAttendanceType' LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.4ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPrivilege Load (0.1ms)[0m  SELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from _app_views_exam_index_html_erb___152061447_80194170 at /home/irfan/Desktop/esp/fedena/app/views/exam/index.html.erb:25)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1  [["user_id", 1]]
+  Rendered exam/index.html.erb (14.9ms)
+Completed 200 OK in 301ms (Views: 33.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/exam/index" for 127.0.0.1 at 2013-09-16 01:56:42 +0600
+Processing by ExamController#index as HTML
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mFedenaConfiguration Load (0.3ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'Locale' LIMIT 1[0m
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:News> at /home/irfan/Desktop/esp/fedena/app/models/news.rb:27)
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'StudentAttendanceType' LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[36mFedenaConfiguration Load (0.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mFedenaConfiguration Load (0.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mPrivilege Load (0.3ms)[0m  [1mSELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1[0m
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from _app_views_exam_index_html_erb___152061447_80194170 at /home/irfan/Desktop/esp/fedena/app/views/exam/index.html.erb:25)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1[0m  [["user_id", 1]]
+  Rendered exam/index.html.erb within layouts/application (23.4ms)
+  [1m[35mSchoolDetail Load (0.3ms)[0m  SELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1
+Completed 500 Internal Server Error in 600ms
+
+ActionView::Template::Error (undefined method `calendar_date_select_includes' for #<#<Class:0x98fa918>:0x98f96e4>):
+    24:       <%= render :partial=>mod.camelize.constantize.send("application_layout_header") %>
+    25:   <% end %>
+    26: 
+    27:   <%= calendar_date_select_includes 'red' %>
+    28:   <% CalendarDateSelect.format = :iso_date %>
+    29: 
+    30:   <%= javascript_include_tag "calendar_date_select/locale/#{I18n.locale}.js" unless I18n.locale==:en %>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__979983684_80237700'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-16 01:56:51 +0600
+Processing by UserController#login as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mFedenaConfiguration Load (0.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'Locale' LIMIT 1[0m
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'StudentAttendanceType' LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[36mFedenaConfiguration Load (0.1ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'[0m
+Redirected to http://localhost.com:3000/user/dashboard
+Filter chain halted as :check_if_loggedin rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/user/dashboard" for 127.0.0.1 at 2013-09-16 01:56:51 +0600
+Processing by UserController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'Locale' LIMIT 1
+  [1m[36mFedenaConfiguration Load (0.3ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'StudentAttendanceType' LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[35mFedenaConfiguration Load (0.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`user_id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from get_latest at /home/irfan/Desktop/esp/fedena/app/models/news.rb:34)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from get_latest at /home/irfan/Desktop/esp/fedena/app/models/news.rb:34)
+  [1m[36mNews Load (0.4ms)[0m  [1mSELECT `news`.* FROM `news` ORDER BY created_at DESC LIMIT 3[0m
+  Rendered user/_news_bar.html.erb (2.6ms)
+  Rendered user/dashboard.erb within layouts/dashboard (9.1ms)
+  [1m[35mSchoolDetail Load (0.2ms)[0m  SELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from check_reminders at /home/irfan/Desktop/esp/fedena/app/models/user.rb:60)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from check_reminders at /home/irfan/Desktop/esp/fedena/app/models/user.rb:60)
+  [1m[36mReminder Load (0.2ms)[0m  [1mSELECT `reminders`.* FROM `reminders` WHERE (recipient = '1')[0m
+  Rendered layouts/_reminder_count.html.erb (70.7ms)
+  Rendered layouts/_autosuggest_menu.html.erb (3.5ms)
+Completed 200 OK in 463ms (Views: 121.8ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/assets/_layouts/dashboard.css?body=1" for 127.0.0.1 at 2013-09-16 01:56:51 +0600
+
+
+Started GET "/assets/user/dashboard.css?body=1" for 127.0.0.1 at 2013-09-16 01:56:51 +0600
+
+
+Started GET "/assets/calendar.css?body=1" for 127.0.0.1 at 2013-09-16 01:56:51 +0600
+
+
+Started GET "/assets/autosuggest-menu.css?body=1" for 127.0.0.1 at 2013-09-16 01:56:51 +0600
+
+
+Started GET "/assets/modalbox.css?body=1" for 127.0.0.1 at 2013-09-16 01:56:52 +0600
+
+
+Started GET "/assets/_styles/ui.all.css?body=1" for 127.0.0.1 at 2013-09-16 01:56:52 +0600
+
+
+Started GET "/stylesheets/%5B%5D.css" for 127.0.0.1 at 2013-09-16 01:56:52 +0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/%5B%5D.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (38.8ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (209.4ms)
+
+
+Started GET "/assets/scripts/nicetitle.js?body=1" for 127.0.0.1 at 2013-09-16 01:56:52 +0600
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2013-09-16 01:56:52 +0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (101.3ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (261.8ms)
+
+
+Started GET "/assets/droplicious.js?body=1" for 127.0.0.1 at 2013-09-16 01:56:52 +0600
+
+
+Started GET "/assets/fckeditor/fckeditor.js?body=1" for 127.0.0.1 at 2013-09-16 01:56:52 +0600
+
+
+Started GET "/assets/builder.js?body=1" for 127.0.0.1 at 2013-09-16 01:56:52 +0600
+
+
+Started GET "/assets/modalbox.js?body=1" for 127.0.0.1 at 2013-09-16 01:56:52 +0600
+
+
+Started GET "/assets/jquery/jquery.min.js?body=1" for 127.0.0.1 at 2013-09-16 01:56:52 +0600
+
+
+Started GET "/assets/jquery/jquery-ui.min.js?body=1" for 127.0.0.1 at 2013-09-16 01:56:52 +0600
+
+
+Started GET "/assets/jquery/jquery.hotkeys.js?body=1" for 127.0.0.1 at 2013-09-16 01:56:52 +0600
+
+
+Started GET "/student/admission1" for 127.0.0.1 at 2013-09-16 01:56:57 +0600
+Processing by StudentController#admission1 as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'Locale' LIMIT 1
+  [1m[36mFedenaConfiguration Load (0.3ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'StudentAttendanceType' LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[35mFedenaConfiguration Load (0.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPrivilege Load (0.2ms)[0m  SELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:Student> at /home/irfan/Desktop/esp/fedena/app/models/student.rb:49)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:Student> at /home/irfan/Desktop/esp/fedena/app/models/student.rb:50)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:Student> at /home/irfan/Desktop/esp/fedena/app/models/student.rb:51)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:Student> at /home/irfan/Desktop/esp/fedena/app/models/student.rb:53)
+  [1m[36mFedenaConfiguration Load (0.4ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'DefaultCountry' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.2ms)[0m  SELECT `sms_settings`.* FROM `sms_settings` WHERE `sms_settings`.`settings_key` = 'ApplicationEnabled' LIMIT 1
+DEPRECATION WARNING: Calling #find(:last) is deprecated. Please call #last directly instead. (called from admission1 at /home/irfan/Desktop/esp/fedena/app/controllers/student_controller.rb:46)
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT `students`.* FROM `students` ORDER BY `students`.`id` DESC LIMIT 1[0m
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AdmissionNumberAutoIncrement' LIMIT 1
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:StudentCategory> at /home/irfan/Desktop/esp/fedena/app/models/student_category.rb:27)
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from _app_views_student_admission__html_erb___811056638__634511018 at /home/irfan/Desktop/esp/fedena/app/views/student/admission1.html.erb:26)
+  [1m[36mStudentCategory Load (0.3ms)[0m  [1mSELECT `student_categories`.* FROM `student_categories` WHERE `student_categories`.`is_deleted` = 0[0m
+  Rendered student/admission1.html.erb within layouts/application (465.8ms)
+Completed 500 Internal Server Error in 617ms
+
+ActionView::Template::Error (undefined method `error_messages_for' for #<#<Class:0xb45c5cec>:0xb45c524c>):
+    41:   <% end %>
+    42: 
+    43:   <% form_for(@student, :url => {:action=> 'admission1'}, :html=> {:multipart=>true}) do |s| %>
+    44:     <%= error_messages_for 'student', :header_message => nil %>
+    45: 
+    46:     <div id="admission1_form">
+    47: 
+  app/views/student/admission1.html.erb:44:in `block in _app_views_student_admission__html_erb___811056638__634511018'
+  app/views/student/admission1.html.erb:43:in `_app_views_student_admission__html_erb___811056638__634511018'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.3ms)
+
+
+Started GET "/user/profile/admin" for 127.0.0.1 at 2013-09-16 01:57:04 +0600
+Processing by UserController#profile as HTML
+  Parameters: {"id"=>"admin"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'Locale' LIMIT 1
+  [1m[36mFedenaConfiguration Load (0.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'StudentAttendanceType' LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.1ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`username` = 'admin' LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`employee_number` = 'admin' LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT `students`.* FROM `students` WHERE `students`.`admission_no` = 'admin' LIMIT 1
+DEPRECATION WARNING: link_to_function is deprecated and will be removed from Rails 4.1. We recommend using Unobtrusive JavaScript instead. See http://guides.rubyonrails.org/working_with_javascript_in_rails.html#unobtrusive-javascript. (called from _app_views_user_profile_erb___297719257_87510870 at /home/irfan/Desktop/esp/fedena/app/views/user/profile.erb:25)
+  Rendered user/profile.erb within layouts/application (26.7ms)
+  [1m[36mSchoolDetail Load (0.4ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 190ms
+
+ActionView::Template::Error (undefined method `calendar_date_select_includes' for #<#<Class:0xb47c52f4>:0xa6eafb4>):
+    24:       <%= render :partial=>mod.camelize.constantize.send("application_layout_header") %>
+    25:   <% end %>
+    26: 
+    27:   <%= calendar_date_select_includes 'red' %>
+    28:   <% CalendarDateSelect.format = :iso_date %>
+    29: 
+    30:   <%= javascript_include_tag "calendar_date_select/locale/#{I18n.locale}.js" unless I18n.locale==:en %>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb__979983684_80237700'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.0ms)

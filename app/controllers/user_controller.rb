@@ -1,7 +1,7 @@
 
 class UserController < ApplicationController
 
-  layout :choose_layout
+
 
   respond_to :html, :js
 
@@ -10,7 +10,9 @@ class UserController < ApplicationController
   before_filter :protect_user_data, :only => [:profile, :user_change_password]
   before_filter :check_if_loggedin, :only => [:login]
 
-  
+  layout :choose_layout
+
+
   def all
     @users = User.active.all
   end
