@@ -63,7 +63,7 @@ module Paperclip
     end
 
     # Returns the Rails.root constant.
-    def rails_root attachment, style_name
+    def Rails.root attachment, style_name
       Rails.root
     end
 

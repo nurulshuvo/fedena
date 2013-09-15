@@ -45,7 +45,7 @@ class ArchivedEmployee < ActiveRecord::Base
     :thumb=> "100x100#",
     :small  => "150x150>"},
     :url => "/system/:class/:attachment/:id/:style/:basename.:extension",
-    :path => ":rails_root/public/system/:class/:attachment/:id/:style/:basename.:extension"
+    :path => ":Rails.root/public/system/:class/:attachment/:id/:style/:basename.:extension"
 
   def full_name
     "#{first_name} #{middle_name} #{last_name}"

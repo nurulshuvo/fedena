@@ -41,10 +41,10 @@ module Spec
       end
 
       describe "#fixture_path" do
-        it "should default to RAILS_ROOT + '/spec/fixtures'" do
-          config.fixture_path.should == RAILS_ROOT + '/spec/fixtures'
-          ActiveSupport::TestCase.fixture_path.should == RAILS_ROOT + '/spec/fixtures'
-          ActionController::IntegrationTest.fixture_path.should == RAILS_ROOT + '/spec/fixtures'
+        it "should default to Rails.root + '/spec/fixtures'" do
+          config.fixture_path.should == Rails.root + '/spec/fixtures'
+          ActiveSupport::TestCase.fixture_path.should == Rails.root + '/spec/fixtures'
+          ActionController::IntegrationTest.fixture_path.should == Rails.root + '/spec/fixtures'
         end
 
         it "should set fixture_path" do

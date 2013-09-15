@@ -6,7 +6,7 @@ OpenFlashChart  Version 2.0.0  11/14/2008
 3) script/plugin install git://github.com/pullmonkey/open_flash_chart.git
 4) script/generate controller test_it
 
-5) Add the following to the test_it_controller.rb in RAILS_ROOT/app/controllers:
+5) Add the following to the test_it_controller.rb in Rails.root/app/controllers:
 class TestItController < ApplicationController
   
   def index
@@ -25,7 +25,7 @@ class TestItController < ApplicationController
 
 end
 
-6) Add the following to index.html.erb in RAILS_ROOT/app/views/test_it/:
+6) Add the following to index.html.erb in Rails.root/app/views/test_it/:
 <html>
 <head>
   <script type="text/javascript" src="/javascripts/swfobject.js"></script>

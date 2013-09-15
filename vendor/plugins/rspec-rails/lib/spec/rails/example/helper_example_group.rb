@@ -5,7 +5,7 @@ module Spec
         attr_accessor :request, :url
       end
 
-      # Helper Specs live in $RAILS_ROOT/spec/helpers/.
+      # Helper Specs live in $Rails.root/spec/helpers/.
       #
       # Helper Specs use Spec::Rails::Example::HelperExampleGroup, which allows you to
       # include your Helper directly in the context and write specs directly

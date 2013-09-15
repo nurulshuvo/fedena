@@ -30,9 +30,9 @@
     <%= wicked_pdf_javascript_include_tag 'cache/javascripts/all' %>
     <%= javascript_include_tag :all %>
 
-    <link rel="stylesheet" type="text/css" href="<%="#{RAILS_ROOT}/public/stylesheets/#{@direction}_layouts/pdf.css" %>" media="all" />
-    <link rel="stylesheet" type="text/css" href="<%="#{RAILS_ROOT}/public/stylesheets/#{get_pdf_stylesheets}.css"%>" media="all" />
-    <link rel="stylesheet" type="text/css" href="<%= "#{RAILS_ROOT}/public/stylesheets/#{@direction}_styles/ui.all.css"%>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<%="#{Rails.root}/public/stylesheets/#{@direction}_layouts/pdf.css" %>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<%="#{Rails.root}/public/stylesheets/#{get_pdf_stylesheets}.css"%>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<%= "#{Rails.root}/public/stylesheets/#{@direction}_styles/ui.all.css"%>" media="all" />
 
     <script type="text/css">
       .page {

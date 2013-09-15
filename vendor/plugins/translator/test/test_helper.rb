@@ -8,8 +8,8 @@ app_root = plugin_root + '/../../..'
 
 if File.directory? app_root + '/config'
   Object.const_set(:RAILS_ENV, ENV["RAILS_ENV"] ||= "test") unless defined?(RAILS_ENV)
-  Object.const_set(:RAILS_ROOT, app_root) unless defined?(RAILS_ROOT)
-  require "#{RAILS_ROOT}/config/environment"
+  Object.const_set(:Rails.root, app_root) unless defined?(Rails.root)
+  require "#{Rails.root}/config/environment"
 end
 
 require 'pp'

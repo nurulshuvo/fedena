@@ -5,7 +5,7 @@ class FckeditorController < ActionController::Base
   include ActionView::Helpers::SanitizeHelper
   extend ActionView::Helpers::SanitizeHelper::ClassMethods
   UPLOADED = "/uploads"
-  UPLOADED_ROOT = RAILS_ROOT + "/public" + UPLOADED
+  UPLOADED_ROOT = Rails.root + "/public" + UPLOADED
   MIME_TYPES = [
     "image/jpg",
     "image/jpeg",
@@ -145,7 +145,7 @@ class FckeditorController < ActionController::Base
   
   def check_path(path)
     exp_path = File.expand_path path
-    if exp_path !~ %r[^#{File.expand_path(RAILS_ROOT)}/public#{UPLOADED}]
+    if exp_path !~ %r[^#{File.expand_path(Rails.root)}/public#{UPLOADED}]
       @errorNumber = 403
       throw Exception.new
     end

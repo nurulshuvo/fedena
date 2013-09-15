@@ -49,7 +49,7 @@ class Employee < ActiveRecord::Base
   has_attached_file :photo,
     :styles => {:original=> "125x125#"},
     :url => "/system/:class/:attachment/:id/:style/:basename.:extension",
-    :path => ":rails_root/public/system/:class/:attachment/:id/:style/:basename.:extension"
+    :path => ":Rails.root/public/system/:class/:attachment/:id/:style/:basename.:extension"
 
   VALID_IMAGE_TYPES = ['image/gif', 'image/png','image/jpeg', 'image/jpg']
 

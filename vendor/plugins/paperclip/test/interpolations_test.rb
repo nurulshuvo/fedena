@@ -12,7 +12,7 @@ class InterpolationsTest < Test::Unit::TestCase
   end
 
   should "return the Rails.root" do
-    assert_equal Rails.root, Paperclip::Interpolations.rails_root(:attachment, :style)
+    assert_equal Rails.root, Paperclip::Interpolations.Rails.root(:attachment, :style)
   end
 
   should "return the Rails.env" do

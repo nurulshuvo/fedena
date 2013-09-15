@@ -1,28 +1,58 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The page you were looking for doesn't exist (404)</title>
+  <style>
+  body {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+  }
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  div.dialog {
+    width: 25em;
+    margin: 4em auto 0 auto;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 4em 0 4em;
+  }
 
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <title>Sorry. That page does not exist.</title>
-        <link rel="stylesheet" media="all" type="text/css" href="/stylesheets/error_page.css" />
-    </head>
+  h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
 
-    <body>
-        <div id="wrapper">
-            <div class="top">
-                Sorry. That page does not exist.
-            </div>
-            <div class="bottom">
-                <div class="error-details"><span class="error-code">Error 404</span>- Page not found</div>
-                <div class="fedena-home">
-                    <a href="/" target="_blank">Go to home</a>
-                </div>
-                <div class="go-back">
-                    <a href="javascript: history.back()">Previous page</a>
-                </div>
-            </div>
-        </div>
-    </body>
+  body > p {
+    width: 33em;
+    margin: 0 auto 1em;
+    padding: 1em 0;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow:0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body>
+  <!-- This file lives in public/404.html -->
+  <div class="dialog">
+    <h1>The page you were looking for doesn't exist.</h1>
+    <p>You may have mistyped the address or the page may have moved.</p>
+  </div>
+  <p>If you are the application owner check the logs for more information.</p>
+</body>
 </html>

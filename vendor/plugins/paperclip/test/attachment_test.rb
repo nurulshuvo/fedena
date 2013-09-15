@@ -586,7 +586,7 @@ class AttachmentTest < Test::Unit::TestCase
     setup do
       @old_defaults = Paperclip::Attachment.default_options.dup
       Paperclip::Attachment.default_options.merge!({
-        :path => ":rails_root/tmp/:attachment/:class/:style/:id/:basename.:extension"
+        :path => ":Rails.root/tmp/:attachment/:class/:style/:id/:basename.:extension"
       })
       FileUtils.rm_rf("tmp")
       rebuild_model
@@ -626,7 +626,7 @@ class AttachmentTest < Test::Unit::TestCase
     setup do
       @old_defaults = Paperclip::Attachment.default_options.dup
       Paperclip::Attachment.default_options.merge!({
-        :path => ":rails_root/tmp/:attachment/:class/:style/:id/:basename.:extension"
+        :path => ":Rails.root/tmp/:attachment/:class/:style/:id/:basename.:extension"
       })
       FileUtils.rm_rf("tmp")
       rebuild_model

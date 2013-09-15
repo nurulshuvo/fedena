@@ -42,12 +42,12 @@ Given %r{I generate a rails application} do
 end
 
 When %r{I save the following as "([^"]*)"} do |path, string|
-  FileUtils.mkdir_p(File.join(CUC_RAILS_ROOT, File.dirname(path)))
-  File.open(File.join(CUC_RAILS_ROOT, path), 'w') { |file| file.write(string) }
+  FileUtils.mkdir_p(File.join(CUC_Rails.root, File.dirname(path)))
+  File.open(File.join(CUC_Rails.root, path), 'w') { |file| file.write(string) }
 end
 
 When %r{I turn off class caching} do
-  Dir.chdir(CUC_RAILS_ROOT) do
+  Dir.chdir(CUC_Rails.root) do
     file = "config/environments/test.rb"
     config = IO.read(file)
     config.gsub!(%r{^\s*config.cache_classes.*$},
@@ -66,7 +66,7 @@ When %r{I reset the database} do
 end
 
 When %r{the rails application is running} do
-  Dir.chdir(CUC_RAILS_ROOT) do
+  Dir.chdir(CUC_Rails.root) do
     require "config/environment"
     require "capybara/rails"
   end
@@ -80,7 +80,7 @@ When %r{this plugin is available} do
 end
 
 When %r{I run "([^"]*)"} do |command|
-  Dir.chdir(CUC_RAILS_ROOT) do
+  Dir.chdir(CUC_Rails.root) do
     `#{command}`
   end
 end

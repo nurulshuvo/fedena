@@ -162,7 +162,7 @@ class IntegrationTest < Test::Unit::TestCase
     setup do
       rebuild_model :styles => { :large => "100x100",
                                  :medium => "50x50" },
-                    :path => ":rails_root/tmp/:id/:attachments/:style.:extension"
+                    :path => ":Rails.root/tmp/:id/:attachments/:style.:extension"
       @dummy = Dummy.new
       @file = File.new(File.join(File.dirname(__FILE__),
                                  "fixtures",
@@ -211,7 +211,7 @@ class IntegrationTest < Test::Unit::TestCase
                                  :thumb => ["32x32#", :gif] },
                     :default_style => :medium,
                     :url => "/:attachment/:class/:style/:id/:basename.:extension",
-                    :path => ":rails_root/tmp/:attachment/:class/:style/:id/:basename.:extension"
+                    :path => ":Rails.root/tmp/:attachment/:class/:style/:id/:basename.:extension"
       @dummy     = Dummy.new
     end
 
@@ -237,7 +237,7 @@ class IntegrationTest < Test::Unit::TestCase
                       :whiny_thumbnails => true,
                       :default_style => :medium,
                       :url => "/:attachment/:class/:style/:id/:basename.:extension",
-                      :path => ":rails_root/tmp/:attachment/:class/:style/:id/:basename.:extension"
+                      :path => ":Rails.root/tmp/:attachment/:class/:style/:id/:basename.:extension"
       end
 
       should "have its definition return true when asked about whiny_thumbnails" do
@@ -253,7 +253,7 @@ class IntegrationTest < Test::Unit::TestCase
                                  :thumb => ["32x32#", :gif] },
                     :default_style => :medium,
                     :url => "/:attachment/:class/:style/:id/:basename.:extension",
-                    :path => ":rails_root/tmp/:attachment/:class/:style/:id/:basename.:extension"
+                    :path => ":Rails.root/tmp/:attachment/:class/:style/:id/:basename.:extension"
       @dummy     = Dummy.new
     end
 
@@ -269,7 +269,7 @@ class IntegrationTest < Test::Unit::TestCase
                       :convert_options => "-strip -depth 8",
                       :default_style => :medium,
                       :url => "/:attachment/:class/:style/:id/:basename.:extension",
-                      :path => ":rails_root/tmp/:attachment/:class/:style/:id/:basename.:extension"
+                      :path => ":Rails.root/tmp/:attachment/:class/:style/:id/:basename.:extension"
       end
 
       should "have its definition return convert_options value when asked about convert_options" do
@@ -286,7 +286,7 @@ class IntegrationTest < Test::Unit::TestCase
                     :whiny_thumbnails => true,
                     :default_style => :medium,
                     :url => "/:attachment/:class/:style/:id/:basename.:extension",
-                    :path => ":rails_root/tmp/:attachment/:class/:style/:id/:basename.:extension"
+                    :path => ":Rails.root/tmp/:attachment/:class/:style/:id/:basename.:extension"
       @dummy     = Dummy.new
       @file      = File.new(File.join(FIXTURES_DIR, "5k.png"), 'rb')
       @bad_file  = File.new(File.join(FIXTURES_DIR, "bad.png"), 'rb')

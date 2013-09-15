@@ -7,7 +7,7 @@ namespace :i18n do
   task :validate_yml => [:environment] do |t, args|
     
     # Grab all the yaml bundles in config/locales
-    bundles = Dir.glob(File.join(RAILS_ROOT, 'config', 'locales', '**', '*.yml'))
+    bundles = Dir.glob(File.join(Rails.root, 'config', 'locales', '**', '*.yml'))
     
     # Attempt to load each bundle
     bundles.each do |bundle|

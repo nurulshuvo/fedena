@@ -1,6 +1,6 @@
 ENV['RAILS_ENV'] = 'test'
-ENV['RAILS_ROOT'] ||= File.dirname(__FILE__) + '/../../../..'
-require File.expand_path(File.join(ENV['RAILS_ROOT'], 'config/environment.rb'))
+ENV['Rails.root'] ||= File.dirname(__FILE__) + '/../../../..'
+require File.expand_path(File.join(ENV['Rails.root'], 'config/environment.rb'))
 require 'test/unit'
 require 'rubygems'
 require 'active_support'

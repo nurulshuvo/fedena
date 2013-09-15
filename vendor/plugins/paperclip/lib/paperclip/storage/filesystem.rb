@@ -8,7 +8,7 @@ module Paperclip
     #   almost all cases, should) be coordinated with the value of the +url+ option to
     #   allow files to be saved into a place where Apache can serve them without
     #   hitting your app. Defaults to
-    #   ":rails_root/public/:attachment/:id/:style/:basename.:extension"
+    #   ":Rails.root/public/:attachment/:id/:style/:basename.:extension"
     #   By default this places the files in the app's public directory which can be served
     #   directly. If you are using capistrano for deployment, a good idea would be to
     #   make a symlink to the capistrano-created system directory from inside your app's

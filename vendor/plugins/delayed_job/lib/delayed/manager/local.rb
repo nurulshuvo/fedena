@@ -9,7 +9,7 @@ module Delayed
       end
 
       def scale_up
-        Rush::Box.new[RAILS_ROOT].bash "rake jobs:work", :background => true
+        Rush::Box.new[Rails.root].bash "rake jobs:work", :background => true
       end
 
       def scale_down
