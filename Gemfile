@@ -25,3 +25,4 @@ gem 'wicked_pdf'
 gem 'declarative_authorization'
 
 gem 'puma'
+gem "calendar_date_select", "~> 1.16.4"

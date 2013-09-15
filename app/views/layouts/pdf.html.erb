@@ -34,6 +34,9 @@
     <link rel="stylesheet" type="text/css" href="<%="#{Rails.root}/public/stylesheets/#{get_pdf_stylesheets}.css"%>" media="all" />
     <link rel="stylesheet" type="text/css" href="<%= "#{Rails.root}/public/stylesheets/#{@direction}_styles/ui.all.css"%>" media="all" />
 
+
+    <%= csrf_meta_tag %>
+
     <script type="text/css">
       .page {
         page-break-after: auto;

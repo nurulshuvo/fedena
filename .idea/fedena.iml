@@ -27,6 +27,7 @@
     <orderEntry type="library" scope="PROVIDED" name="atomic (v1.1.14, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.1.4, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.3.5, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="calendar_date_select (v1.16.4, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="climate_control (v0.0.3, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cocaine (v0.5.1, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.0.0, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />

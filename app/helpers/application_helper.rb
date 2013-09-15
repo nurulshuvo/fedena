@@ -17,6 +17,19 @@
 #limitations under the License.
 
 module ApplicationHelper
+
+  def link_to_remote(name = nil, options = nil, html_options = nil, &block)
+      html_options, options = options, name if block_given?
+      options ||= {}
+
+      html_options = convert_options_to_data_attributes(options, html_options)
+      html_options.merge({"data-remote" => "true"})
+      url = url_for(options)
+      html_options['href'] ||= url
+
+      content_tag(:a, name || url, html_options, &block)
+  end
+
   def get_stylesheets
     @direction = (rtl?) ? 'rtl/' : ''
     stylesheets = [] unless stylesheets
@@ -84,7 +97,7 @@ module ApplicationHelper
   end
 
   def currency
-    Configuration.find_by_config_key("CurrencyType").config_value
+    FedenaConfiguration.find_by_config_key("CurrencyType").config_value
   end
 
   def pdf_image_tag(image, options = {})
@@ -116,7 +129,7 @@ module ApplicationHelper
 
   def current_school_name
     Rails.cache.fetch("current_school_name#{session[:user_id]}"){
-      Configuration.get_config_value('InstitutionName')
+      FedenaConfiguration.get_config_value('InstitutionName')
     }
   end
 

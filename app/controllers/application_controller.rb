@@ -9,9 +9,11 @@ class ApplicationController < ActionController::Base
   before_filter :set_user_language
   before_filter :set_variables
   before_filter :login_check
-
   before_filter :dev_mode
   include CustomInPlaceEditing
+  helper_method :current_user
+
+
 
   def login_check
     if session[:user_id].present?
@@ -294,7 +296,7 @@ class ApplicationController < ActionController::Base
     server_time = Time.now
     server_time_to_gmt = server_time.getgm
     @local_tzone_time = server_time
-    time_zone =FedenaFedenaConfiguration.find_by_config_key("TimeZone")
+    time_zone =FedenaConfiguration.find_by_config_key("TimeZone")
     unless time_zone.nil?
       unless time_zone.config_value.nil?
         zone = TimeZone.find(time_zone.config_value)
@@ -314,6 +316,24 @@ class ApplicationController < ActionController::Base
 
   private
   def set_user_language
+    lan = FedenaConfiguration.find_by_config_key("Locale")
+    I18n.default_locale = :en
+    if session[:language].nil?
+      I18n.locale = lan.config_value
+    else
+      I18n.locale = session[:language]
+    end
+    News.new.reload_news_bar
+  end
 
+  def layout_rendering
+    render layout: choose_layout
+  end
+
+  def choose_layout
+    return "login" if action_name == 'login' or action_name == 'set_new_password'
+    return "forgotpw" if action_name == 'forgot_password'
+    return "dashboard" if action_name == 'dashboard'
+    "application"
   end
 end

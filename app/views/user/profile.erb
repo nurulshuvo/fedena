@@ -54,9 +54,7 @@
     <% if @current_user.id == @user.id %>
       <div class="profile_info_label"><%= t('language') %></div>
       <div class="profile_info_text"> <%= select :FedenaConfiguration, :locale, available_language_options ,{:selected=>"#{I18n.locale}"},
-          {:onchange => "#{remote_function(
-          :url => { :controller=>'application',:action => 'set_language' },
-          :with => "'language='+value"  )}"}%> </div>
+          {:onchange => "#{link_to(:url => { :controller=>'application', remote: true, :action => 'set_language' },:with => "'language='+value"  )}"}%> </div>
     <% end %>
     <div class="extender"></div>
   </div>

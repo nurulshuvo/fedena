@@ -87,7 +87,7 @@
   <li><%= link_to t('news_text'), :controller => "news", :action => "index" \
     if @current_user.admin? %></li> -->
   <% if permitted_to? :index, :timetable %>
-    <li class="a"><%= link_to "#{t('timetable_text')} <span class='down-arrow'>▼</span>", :controller => "timetable", :action => "index" %>
+    <li class="a"><%= link_to "#{t('timetable_text')} <span class='down-arrow'>▼</span>".html_safe, :controller => "timetable", :action => "index" %>
       <ul class="level-1">
         <%  if permitted_to? :new_timetable,:timetable%>
           <li><%= link_to "#{t('create_timetable')}", :controller => "timetable", :action => "new_timetable" %></li>
@@ -130,7 +130,7 @@
     <ul class="level-1" id="more-parent">
       <li><%= link_to "#{t('calendar_text')}" , :controller => "calendar", :action=>"index" %></li>
       <% if permitted_to? :index, :exam %>
-        <li><%= link_to "#{t('examination')} <span class='right-arrow'>#{arrow_dir}</span>" , :controller => "exam", :action=>"index" %>
+        <li><%= link_to "#{t('examination')} <span class='right-arrow'>#{arrow_dir}</span>".html_safe , :controller => "exam", :action=>"index" %>
           <ul class="level-2" id="exam-parent">
             <% @employee_subjects=[] %>
             <% @employee_subjects= @current_user.employee_record.subjects.map { |n| n.id} if @current_user.employee?  %>
@@ -166,7 +166,7 @@
         <li><%= link_to "#{t('event_creations')}" , :controller => "event", :action=>"index" %></li>
       <% end %>
       <% if permitted_to? :hr, :employee %>
-        <li><%= link_to "#{t('human_resource')} <span class='right-arrow'>#{arrow_dir}</span>" , :controller => "employee", :action=>"hr" %>
+        <li><%= link_to "#{t('human_resource')} <span class='right-arrow'>#{arrow_dir}</span>".html_safe , :controller => "employee", :action=>"hr" %>
           <ul class="level-2">
             <% if permitted_to? :settings, :employee %>
               <li><%= link_to "#{t('setting')}", :controller=>"employee", :action=>"settings"%></li>
@@ -195,7 +195,7 @@
         </li>
       <% end %>
       <% if permitted_to? :index, :finance %>
-        <li><%= link_to "#{t('finance_text')} <span class='right-arrow'>#{arrow_dir}</span>" , :controller => "finance", :action=>"index" %>
+        <li><%= link_to "#{t('finance_text')} <span class='right-arrow'>#{arrow_dir}</span>".html_safe , :controller => "finance", :action=>"index" %>
           <ul class="level-2" id="finance_menu">
             <li><%= link_to "#{t('fees_text')}", :controller => "finance", :action => "fees_index" %> </li>
             <li><%= link_to "#{t('category')}", :controller => "finance", :action => "categories" %> </li>
