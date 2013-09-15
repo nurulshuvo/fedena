@@ -52,6 +52,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mysql2 (v0.3.13, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="paperclip (v3.5.1, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.3, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="puma (v2.6.0, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.5.2, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.2, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v4.0.0, RVM: ruby-2.0.0-p195 [fedena]) [gem]" level="application" />

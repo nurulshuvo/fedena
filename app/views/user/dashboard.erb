@@ -17,9 +17,9 @@
 #specific language governing permissions and limitations
 #under the License. -%>
 
-<% cache News.cache_fragment_name do%>
+
   <%= render :partial=>'news_bar' %>
-<% end %>
+
 
 <% unless flash[:notice].nil? %> <p class="flash-msg"> <%= flash[:notice] %> </p> <% end %>
 

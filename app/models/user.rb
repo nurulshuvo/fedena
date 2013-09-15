@@ -34,9 +34,13 @@ class User < ActiveRecord::Base
   scope :active, :conditions => { :is_deleted => false }
   scope :inactive, :conditions => { :is_deleted => true }
 
-  def before_save
+  before_create :create_password
+  before_update :create_password
+
+
+  def create_password
     self.salt = random_string(8) if self.salt == nil
-    self.hashed_password = Digest::SHA1.hexdigesI18n.t(self.salt + self.password) unless self.password.nil?
+    self.hashed_password = Digest::SHA1.hexdigest(self.salt + self.password) unless self.password.nil?
     if self.new_record?
       self.admin, self.student, self.employee = false, false, false
       self.admin    = true if self.role == 'Admin'
@@ -65,7 +69,7 @@ class User < ActiveRecord::Base
 
   def self.authenticate?(username, password)
     u = User.find_by_username username
-    u.hashed_password == Digest::SHA1.hexdigesI18n.t(u.salt + password)
+    u.hashed_password == Digest::SHA1.hexdigest(u.salt + password)
   end
 
   def random_string(len)
@@ -98,7 +102,7 @@ class User < ActiveRecord::Base
           prv << :subject_attendance if FedenaConfiguration.get_config_value('StudentAttendanceType') == 'SubjectWise'
           prv << :subject_exam
         end
-        if Batch.active.collecI18n.t(&:employee_id).include?(employee.id.to_s)
+        if Batch.active.collect(&:employee_id).include?(employee.id.to_s)
           prv << :view_results
         end
       end
@@ -120,7 +124,7 @@ class User < ActiveRecord::Base
   end
 
   def has_subject_in_batch(b)
-    employee_record.subjects.collecI18n.t(&:batch_id).include? b.id
+    employee_record.subjects.collect(&:batch_id).include? b.id
   end
 
   def days_events(date)
@@ -166,7 +170,7 @@ class User < ActiveRecord::Base
       all_events+= Event.all(:conditions=>["(? < date(events.end_date)) and is_exam = true",date],:order=>"start_date")
       all_events+= Event.all(:conditions=>["(? < date(events.end_date)) and is_common = true",date],:order=>"start_date")
     end
-    start_date=all_events.collecI18n.t(&:start_date).min
+    start_date=all_events.collect(&:start_date).min
     unless start_date
       return ""
     else

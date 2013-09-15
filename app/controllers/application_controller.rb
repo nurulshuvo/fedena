@@ -1,21 +1,3 @@
-#Fedena
-#Copyright 2011 Foradian Technologies Private Limited
-#
-#This product includes software developed at
-#Project Fedena - http://www.projectfedena.org/
-#
-#Licensed under the Apache License, Version 2.0 (the "License");
-#you may not use this file except in compliance with the License.
-#You may obtain a copy of the License at
-#
-#  http://www.apache.org/licenses/LICENSE-2.0
-#
-#Unless required by applicable law or agreed to in writing, software
-#distributed under the License is distributed on an "AS IS" BASIS,
-#WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#See the License for the specific language governing permissions and
-#limitations under the License.
-
 class ApplicationController < ActionController::Base
   helper :all
   helper_method :can_access_request?
@@ -35,7 +17,7 @@ class ApplicationController < ActionController::Base
     if session[:user_id].present?
       unless (controller_name == "user") and ["first_login_change_password","login","logout","forgot_password"].include? action_name
         user = User.active.find(session[:user_id])
-        setting = configuration.get_config_value('FirstTimeLoginEnable')
+        setting = FedenaConfiguration.get_config_value('FirstTimeLoginEnable')
         if setting == "1" and user.is_first_login != false
           flash[:notice] = "#{t('first_login_attempt')}"
           redirect_to :controller => "user",:action => "first_login_change_password",:id => user.username
@@ -53,8 +35,8 @@ class ApplicationController < ActionController::Base
 
   def set_variables
     unless @current_user.nil?
-      @attendance_type = configuration.get_config_value('StudentAttendanceType') unless @current_user.student?
-      @modules = configuration.available_modules
+      @attendance_type = FedenaConfiguration.get_config_value('StudentAttendanceType') unless @current_user.student?
+      @modules = FedenaConfiguration.available_modules
     end
   end
 
@@ -171,8 +153,8 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def configuration_settings_for_hr
-    hr = configuration.find_by_config_value("HR")
+  def FedenaConfiguration_settings_for_hr
+    hr = FedenaConfiguration.find_by_config_value("HR")
     if hr.nil?
       redirect_to :controller => 'user', :action => 'dashboard'
       flash[:notice] = "#{t('flash_msg4')}"
@@ -181,8 +163,8 @@ class ApplicationController < ActionController::Base
 
 
 
-  def configuration_settings_for_finance
-    finance = configuration.find_by_config_value("Finance")
+  def FedenaConfiguration_settings_for_finance
+    finance = FedenaConfiguration.find_by_config_value("Finance")
     if finance.nil?
       redirect_to :controller => 'user', :action => 'dashboard'
       flash[:notice] = "#{t('flash_msg4')}"
@@ -306,25 +288,13 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def render(options = nil, extra_options = {}, &block)
-    if RTL_LANGUAGES.include? I18n.locale.to_sym
-      unless options.nil?
-        unless request.xhr?
-          if options[:pdf]
-            options ||= {}
-            options = options.merge(:zoom => 0.68)
-          end
-        end
-      end
-    end
-    super(options, extra_options, &block)
-  end
+
 
   def default_time_zone_present_time
     server_time = Time.now
     server_time_to_gmt = server_time.getgm
     @local_tzone_time = server_time
-    time_zone =FedenaConfiguration.find_by_config_key("TimeZone")
+    time_zone =FedenaFedenaConfiguration.find_by_config_key("TimeZone")
     unless time_zone.nil?
       unless time_zone.config_value.nil?
         zone = TimeZone.find(time_zone.config_value)

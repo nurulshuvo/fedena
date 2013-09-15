@@ -6590,3 +6590,1124 @@ Completed 200 OK in 67ms (Views: 50.8ms | ActiveRecord: 3.6ms)
 
 
 Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 16:43:11 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 16:46:12 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (1.8ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.2ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (135.6ms)
+Completed 200 OK in 171ms (Views: 132.1ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 16:46:13 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 16:46:16 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.2ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (4.8ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 16:46:17 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 16:46:33 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.4ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.2ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (4.7ms)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 16:46:33 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 16:47:21 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.4ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.3ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (106.2ms)
+Completed 200 OK in 126ms (Views: 106.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 16:47:22 +0600
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:24:42 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.3ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (4.9ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:24:43 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:29:26 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.4ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.2ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (58.7ms)
+Completed 200 OK in 172ms (Views: 68.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:29:26 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:31:37 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.2ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (48.7ms)
+Completed 200 OK in 64ms (Views: 47.9ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:31:38 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:31:47 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (1.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.2ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (106.9ms)
+Completed 200 OK in 134ms (Views: 106.1ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:31:48 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:33:17 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.2ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (63.7ms)
+Completed 200 OK in 84ms (Views: 63.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:33:19 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:34:16 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.4ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.4ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1
+  Rendered user/login.html.erb (71.0ms)
+Completed 200 OK in 75ms (Views: 72.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/_layouts/login.css?body=1" for 127.0.0.1 at 2013-09-15 17:34:16 +0600
+
+
+Started GET "/assets/_styles/ui.all.css?body=1" for 127.0.0.1 at 2013-09-15 17:34:16 +0600
+
+
+Started GET "/stylesheets/%5B%5D.css" for 127.0.0.1 at 2013-09-15 17:34:16 +0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/%5B%5D.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (32.1ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (203.1ms)
+
+
+Started GET "/assets/autosuggest-menu.css?body=1" for 127.0.0.1 at 2013-09-15 17:34:16 +0600
+
+
+Started GET "/assets/user/login.css?body=1" for 127.0.0.1 at 2013-09-15 17:34:16 +0600
+
+
+Started GET "/assets/modalbox.css?body=1" for 127.0.0.1 at 2013-09-15 17:34:16 +0600
+
+
+Started GET "/assets/calendar.css?body=1" for 127.0.0.1 at 2013-09-15 17:34:16 +0600
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2013-09-15 17:34:16 +0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (36.3ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (238.5ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:34:17 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:35:05 +0600
+Processing by UserController#login as HTML
+  [1m[36mFedenaConfiguration Load (2.3ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1[0m
+  [1m[35mSchoolDetail Load (17.7ms)[0m  SELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (340.2ms)
+Completed 200 OK in 379ms (Views: 339.4ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/assets/user/login.css?body=1" for 127.0.0.1 at 2013-09-15 17:35:06 +0600
+
+
+Started GET "/stylesheets/%5B%5D.css" for 127.0.0.1 at 2013-09-15 17:35:06 +0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/%5B%5D.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (395.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (97.1ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.7ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1691.7ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2013-09-15 17:35:08 +0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (31.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (99.5ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.5ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (864.9ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:35:09 +0600
+
+
+Started GET "/assets/calendar.css?body=1" for 127.0.0.1 at 2013-09-15 17:35:10 +0600
+
+
+Started GET "/assets/autosuggest-menu.css?body=1" for 127.0.0.1 at 2013-09-15 17:35:10 +0600
+
+
+Started GET "/assets/modalbox.css?body=1" for 127.0.0.1 at 2013-09-15 17:35:10 +0600
+
+
+Started GET "/assets/_styles/ui.all.css?body=1" for 127.0.0.1 at 2013-09-15 17:35:11 +0600
+
+
+Started GET "/assets/_layouts/login.css?body=1" for 127.0.0.1 at 2013-09-15 17:35:11 +0600
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 17:35:21 +0600
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (41.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (200.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:35:34 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.4ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.4ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1
+  Rendered user/login.html.erb (71.3ms)
+Completed 200 OK in 76ms (Views: 72.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/_layouts/login.css?body=1" for 127.0.0.1 at 2013-09-15 17:35:34 +0600
+
+
+Started GET "/assets/user/login.css?body=1" for 127.0.0.1 at 2013-09-15 17:35:34 +0600
+
+
+Started GET "/assets/autosuggest-menu.css?body=1" for 127.0.0.1 at 2013-09-15 17:35:34 +0600
+
+
+Started GET "/assets/modalbox.css?body=1" for 127.0.0.1 at 2013-09-15 17:35:34 +0600
+
+
+Started GET "/assets/calendar.css?body=1" for 127.0.0.1 at 2013-09-15 17:35:34 +0600
+
+
+Started GET "/stylesheets/%5B%5D.css" for 127.0.0.1 at 2013-09-15 17:35:34 +0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/%5B%5D.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (38.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (232.8ms)
+
+
+Started GET "/assets/_styles/ui.all.css?body=1" for 127.0.0.1 at 2013-09-15 17:35:35 +0600
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2013-09-15 17:35:35 +0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (35.5ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (235.7ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:35:35 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:43:24 +0600
+Processing by UserController#login as HTML
+  [1m[36mFedenaConfiguration Load (0.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1[0m
+  [1m[35mSchoolDetail Load (0.2ms)[0m  SELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1
+  Rendered user/login.html.erb (65.0ms)
+Completed 200 OK in 87ms (Views: 65.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:43:25 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:44:08 +0600
+Processing by UserController#login as HTML
+  [1m[36mFedenaConfiguration Load (0.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1[0m
+  [1m[35mSchoolDetail Load (0.2ms)[0m  SELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1
+  Rendered user/login.html.erb (63.2ms)
+Completed 200 OK in 81ms (Views: 63.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:44:09 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:44:11 +0600
+Processing by UserController#login as HTML
+  [1m[36mFedenaConfiguration Load (0.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1[0m
+  [1m[35mSchoolDetail Load (0.2ms)[0m  SELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1
+  Rendered user/login.html.erb (5.2ms)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:44:11 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:44:20 +0600
+Processing by UserController#login as HTML
+  [1m[36mFedenaConfiguration Load (0.7ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1[0m
+  [1m[35mSchoolDetail Load (0.2ms)[0m  SELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1
+  Rendered user/login.html.erb (92.0ms)
+Completed 200 OK in 129ms (Views: 92.0ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:44:22 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:44:57 +0600
+Processing by UserController#login as HTML
+  [1m[36mFedenaConfiguration Load (0.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1[0m
+Completed 500 Internal Server Error in 100ms
+
+ActionView::MissingTemplate (Missing template layouts/g with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/irfan/Desktop/esp/fedena/app/views"
+  * "/home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/declarative_authorization-0.5.7/app/views"
+):
+  app/controllers/application_controller.rb:320:in `render'
+  app/controllers/user_controller.rb:255:in `login'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:45:08 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (3.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.2ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb within layouts/login (503.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1
+Completed 200 OK in 1008ms (Views: 834.8ms | ActiveRecord: 26.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:45:15 +0600
+Processing by UserController#login as HTML
+  [1m[36mFedenaConfiguration Load (3.3ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1[0m
+  [1m[35mSchoolDetail Load (26.8ms)[0m  SELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1
+  Rendered user/login.html.erb within layouts/login (61.6ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 535ms (Views: 445.3ms | ActiveRecord: 30.3ms)
+
+
+Started GET "/assets/_layouts/login.css?body=1" for 127.0.0.1 at 2013-09-15 17:45:16 +0600
+
+
+Started GET "/assets/user/login.css?body=1" for 127.0.0.1 at 2013-09-15 17:45:17 +0600
+
+
+Started GET "/assets/calendar.css?body=1" for 127.0.0.1 at 2013-09-15 17:45:17 +0600
+
+
+Started GET "/assets/autosuggest-menu.css?body=1" for 127.0.0.1 at 2013-09-15 17:45:18 +0600
+
+
+Started GET "/assets/modalbox.css?body=1" for 127.0.0.1 at 2013-09-15 17:45:18 +0600
+
+
+Started GET "/assets/_styles/ui.all.css?body=1" for 127.0.0.1 at 2013-09-15 17:45:18 +0600
+
+
+Started GET "/stylesheets/%5B%5D.css" for 127.0.0.1 at 2013-09-15 17:45:19 +0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/%5B%5D.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (56.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (460.0ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2013-09-15 17:45:19 +0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (41.8ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (311.1ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:45:20 +0600
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 17:45:30 +0600
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (34.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (231.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:49:20 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.1ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (50.5ms)
+Completed 200 OK in 66ms (Views: 50.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:49:22 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:50:19 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.2ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (60.0ms)
+Completed 200 OK in 165ms (Views: 64.5ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:50:20 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:51:57 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.4ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (47.6ms)
+Completed 200 OK in 64ms (Views: 47.1ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:51:58 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:52:24 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.4ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.3ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (8.3ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:52:25 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:52:45 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.3ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (6.3ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:52:46 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:52:57 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.2ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (6.3ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:52:58 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 17:53:57 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.3ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (57.8ms)
+Completed 200 OK in 124ms (Views: 56.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 17:53:58 +0600
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 17:59:58 +0600
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (34.7ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (266.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 18:00:18 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.3ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (56.1ms)
+Completed 200 OK in 74ms (Views: 54.8ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 18:00:19 +0600
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 18:00:23 +0600
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.6.0) lib/puma/server.rb:486:in `handle_request'
+  puma (2.6.0) lib/puma/server.rb:357:in `process_client'
+  puma (2.6.0) lib/puma/server.rb:250:in `block in run'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.6.0) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (36.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (252.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-15 18:00:50 +0600
+Processing by UserController#login as HTML
+  [1m[35mFedenaConfiguration Load (0.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+  [1m[36mSchoolDetail Load (0.3ms)[0m  [1mSELECT `school_details`.* FROM `school_details` ORDER BY `school_details`.`id` ASC LIMIT 1[0m
+  Rendered user/login.html.erb (88.2ms)
+Completed 200 OK in 108ms (Views: 87.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2013-09-15 18:00:51 +0600
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 18:00:54 +0600
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nLhlhsqsPxW7ehV6spKIav7MkrslVJ6PdH8Yxj981gY=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"<span class="}
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+Completed 500 Internal Server Error in 26ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/user_controller.rb:237:in `login'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.2ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 18:05:23 +0600
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nLhlhsqsPxW7ehV6spKIav7MkrslVJ6PdH8Yxj981gY=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"<span class="}
+  [1m[36mFedenaConfiguration Load (0.3ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1[0m
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+Completed 500 Internal Server Error in 36ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/user_controller.rb:237:in `login'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.9ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 18:07:13 +0600
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nLhlhsqsPxW7ehV6spKIav7MkrslVJ6PdH8Yxj981gY=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"<span class="}
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+Completed 500 Internal Server Error in 32ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/user_controller.rb:237:in `login'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 18:13:42 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nLhlhsqsPxW7ehV6spKIav7MkrslVJ6PdH8Yxj981gY=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"<span class="}
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`username` = 'admin' LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`username` = 'admin' LIMIT 1
+Completed 500 Internal Server Error in 197ms
+
+NoMethodError (undefined method `hexdigesI18n' for Digest::SHA1:Class):
+  app/models/user.rb:68:in `authenticate?'
+  app/controllers/user_controller.rb:239:in `login'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.6ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 18:16:26 +0600
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nLhlhsqsPxW7ehV6spKIav7MkrslVJ6PdH8Yxj981gY=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"<span class="}
+  [1m[36mFedenaConfiguration Load (0.3ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1[0m
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`username` = 'admin' LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'admin' LIMIT 1[0m
+Completed 500 Internal Server Error in 159ms
+
+NoMethodError (undefined method `hexdigesI18n' for Digest::SHA1:Class):
+  app/models/user.rb:68:in `authenticate?'
+  app/controllers/user_controller.rb:239:in `login'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.5ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 18:16:54 +0600
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nLhlhsqsPxW7ehV6spKIav7MkrslVJ6PdH8Yxj981gY=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"<span class="}
+  [1m[35mFedenaConfiguration Load (0.4ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`username` = 'admin' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`username` = 'admin' LIMIT 1
+Completed 500 Internal Server Error in 106ms
+
+NoMethodError (undefined method `+' for nil:NilClass):
+  app/models/user.rb:68:in `authenticate?'
+  app/controllers/user_controller.rb:239:in `login'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.3ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 18:17:10 +0600
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nLhlhsqsPxW7ehV6spKIav7MkrslVJ6PdH8Yxj981gY=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"<span class="}
+  [1m[36mFedenaConfiguration Load (0.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`username` = 'admin' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'admin' LIMIT 1[0m
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `+' for nil:NilClass):
+  app/models/user.rb:68:in `authenticate?'
+  app/controllers/user_controller.rb:239:in `login'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.4ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 18:17:42 +0600
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nLhlhsqsPxW7ehV6spKIav7MkrslVJ6PdH8Yxj981gY=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"<span class="}
+  [1m[35mFedenaConfiguration Load (0.3ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+Completed 500 Internal Server Error in 72ms
+
+RuntimeError ({"utf8"=>"✓", "authenticity_token"=>"nLhlhsqsPxW7ehV6spKIav7MkrslVJ6PdH8Yxj981gY=", "user"=>{"username"=>"admin", "password"=>"admin123"}, "commit"=>"<span class=", "controller"=>"user", "action"=>"login"}):
+  app/controllers/user_controller.rb:237:in `login'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.8ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 18:19:04 +0600
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nLhlhsqsPxW7ehV6spKIav7MkrslVJ6PdH8Yxj981gY=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"<span class="}
+  [1m[36mFedenaConfiguration Load (1.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1[0m
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`username` = 'admin' LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'admin' LIMIT 1[0m
+Completed 500 Internal Server Error in 149ms
+
+NoMethodError (undefined method `+' for nil:NilClass):
+  app/models/user.rb:68:in `authenticate?'
+  app/controllers/user_controller.rb:239:in `login'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (74.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 AS one FROM `users` WHERE (`users`.`username` = BINARY 'admin' AND `users`.`id` != 1 AND `users`.`is_deleted` = 0) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mtruncate user[0m
+Mysql2::Error: Table 'fedena_development.user' doesn't exist: truncate user
+  [1m[35m (108.2ms)[0m  truncate users
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM `users` WHERE (`users`.`username` = BINARY 'admin' AND `users`.`is_deleted` = 0) LIMIT 1
+  [1m[36m (46.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE (`users`.`username` = BINARY 'admin' AND `users`.`is_deleted` = 0) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM `users` WHERE (`users`.`username` = BINARY 'admin' AND `users`.`is_deleted` = 0) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `updated_at`, `username`) VALUES ('2013-09-15 12:28:05', 'admin@esp.com', '2013-09-15 12:28:05', 'admin')[0m
+  [1m[35m (108.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM `users` WHERE (`users`.`username` = BINARY 'admin' AND `users`.`is_deleted` = 0) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (102.7ms)[0m  truncate users
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 AS one FROM `users` WHERE (`users`.`username` = BINARY 'admin' AND `users`.`is_deleted` = 0) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `employee`, `hashed_password`, `is_first_login`, `salt`, `student`, `updated_at`, `username`) VALUES (0, '2013-09-15 12:29:32', 'admin@esp.com', 0, '25992db3c0b939ef8dc4359dd885354a0de9451c', 1, 'EdeKHAVP', 0, '2013-09-15 12:29:32', 'admin')[0m
+  [1m[35m (145.3ms)[0m  COMMIT
+
+
+Started POST "/" for 127.0.0.1 at 2013-09-15 18:29:46 +0600
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nLhlhsqsPxW7ehV6spKIav7MkrslVJ6PdH8Yxj981gY=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"<span class="}
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'LogoName' LIMIT 1
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`username` = 'admin' LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`username` = 'admin' LIMIT 1
+Redirected to http://localhost.com:3000/user/dashboard
+Completed 302 Found in 173ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/user/dashboard" for 127.0.0.1 at 2013-09-15 18:29:47 +0600
+Processing by UserController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mFedenaConfiguration Load (0.6ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'StudentAttendanceType' LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[35mFedenaConfiguration Load (0.8ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.7ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1[0m
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:News> at /home/irfan/Desktop/esp/fedena/app/models/news.rb:27)
+  Rendered user/dashboard.erb (36.9ms)
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (undefined method `xss_terminate' for #<Class:0x98cc644>):
+    17: #specific language governing permissions and limitations
+    18: #under the License. -%>
+    19: 
+    20: <% cache News.cache_fragment_name do%>
+    21:   <%= render :partial=>'news_bar' %>
+    22: <% end %>
+    23: 
+  app/models/news.rb:30:in `<class:News>'
+  app/models/news.rb:19:in `<top (required)>'
+  app/views/user/dashboard.erb:20:in `_app_views_user_dashboard_erb__45224202_79825690'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.5ms)
+
+
+Started GET "/user/dashboard" for 127.0.0.1 at 2013-09-15 18:30:25 +0600
+Processing by UserController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'StudentAttendanceType' LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[36mFedenaConfiguration Load (0.8ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mFedenaConfiguration Load (0.2ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:News> at /home/irfan/Desktop/esp/fedena/app/models/news.rb:27)
+  Rendered user/_news_bar.html.erb (21.2ms)
+  Rendered user/dashboard.erb (87.7ms)
+Completed 500 Internal Server Error in 117ms
+
+ActionView::Template::Error (undefined method `xss_terminate' for #<Class:0xa667cf4>):
+    17: #specific language governing permissions and limitations
+    18: #under the License. -%>
+    19: 
+    20: <% @dash_news = News.get_latest %>
+    21: 
+    22: <div id="news_bar">
+    23:   <% @dash_news.each do |news| %>
+  app/models/news.rb:30:in `<class:News>'
+  app/models/news.rb:19:in `<top (required)>'
+  app/views/user/_news_bar.html.erb:20:in `_app_views_user__news_bar_html_erb___715137235_87102170'
+  app/views/user/dashboard.erb:21:in `_app_views_user_dashboard_erb__45224202_86840870'
+
+
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/irfan/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.4ms)
+
+
+Started GET "/user/dashboard" for 127.0.0.1 at 2013-09-15 18:31:16 +0600
+Processing by UserController#dashboard as HTML
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:34)
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:User> at /home/irfan/Desktop/esp/fedena/app/models/user.rb:35)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mFedenaConfiguration Load (0.3ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'StudentAttendanceType' LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[35mFedenaConfiguration Load (0.2ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mFedenaConfiguration Load (0.1ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from available_modules at /home/irfan/Desktop/esp/fedena/app/models/fedena_configuration.rb:60)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'AvailableModules'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `configurations`.* FROM `configurations` WHERE `configurations`.`config_key` = 'FirstTimeLoginEnable' LIMIT 1[0m
+DEPRECATION WARNING: Calling #scope or #default_scope with a hash is deprecated. Please use a lambda containing a scope. E.g. scope :red, -> { where(color: 'red') }. (called from <class:News> at /home/irfan/Desktop/esp/fedena/app/models/news.rb:27)
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from get_latest at /home/irfan/Desktop/esp/fedena/app/models/news.rb:34)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from get_latest at /home/irfan/Desktop/esp/fedena/app/models/news.rb:34)
+  [1m[35mNews Load (0.4ms)[0m  SELECT `news`.* FROM `news` ORDER BY created_at DESC LIMIT 3
+  Rendered user/_news_bar.html.erb (11.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPrivilege Load (0.7ms)[0m  SELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1  [["user_id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from check_reminders at /home/irfan/Desktop/esp/fedena/app/models/user.rb:60)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from check_reminders at /home/irfan/Desktop/esp/fedena/app/models/user.rb:60)
+  [1m[36mReminder Load (0.6ms)[0m  [1mSELECT `reminders`.* FROM `reminders` WHERE (recipient = '1')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`is_deleted` = 0 AND `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `privileges`.* FROM `privileges` INNER JOIN `privileges_users` ON `privileges`.`id` = `privileges_users`.`privilege_id` WHERE `privileges_users`.`user_id` = 1[0m  [["user_id", 1]]
+  Rendered user/dashboard.erb (347.4ms)
+Completed 200 OK in 530ms (Views: 339.0ms | ActiveRecord: 14.8ms)

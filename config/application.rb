@@ -22,5 +22,8 @@ module Fedena
     config.autoload_paths += %W(#{config.root}/lib)
     config.autoload_paths += %W(#{config.root}/app/models/hr)
     config.autoload_paths += %W(#{config.root}/app/models/finance)
+
+    config.action_controller.permit_all_parameters = true
+
   end
 end

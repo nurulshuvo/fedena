@@ -17,18 +17,16 @@
 #limitations under the License.
 
 class UserController < ApplicationController
+
   layout :choose_layout
+
+  respond_to :html, :js
+
   before_filter :login_required, :except => [:forgot_password, :login, :set_new_password, :reset_password,:first_login_change_password]
   before_filter :only_admin_allowed, :only => [:edit, :create, :index, :edit_privilege, :user_change_password,:delete,:list_user,:all]
   before_filter :protect_user_data, :only => [:profile, :user_change_password]
   before_filter :check_if_loggedin, :only => [:login]
-  #  filter_access_to :edit_privilege
-  def choose_layout
-    return 'login' if action_name == 'login' or action_name == 'set_new_password'
-    return 'forgotpw' if action_name == 'forgot_password'
-    return 'dashboard' if action_name == 'dashboard'
-    'application'
-  end
+
   
   def all
     @users = User.active.all
@@ -238,7 +236,7 @@ class UserController < ApplicationController
       if request.post? and params[:user]
         @user = User.new(params[:user])
         user = User.active.find_by_username @user.username
-        if user.present? and User.authenticate?(@user.username, @user.password)
+        if user.present? and User.authenticate?(params[:user][:username], params[:user][:password])
           authenticated_user = user
         end
       end
@@ -248,6 +246,7 @@ class UserController < ApplicationController
     elsif authenticated_user.blank? and request.post?
       flash[:notice] = "#{t('login_error_message')}"
     end
+
   end
 
   def first_login_change_password
@@ -396,5 +395,18 @@ class UserController < ApplicationController
     flash[:notice] = "#{t('welcome')}, #{user.first_name} #{user.last_name}!"
     redirect_to session[:back_url] || {:controller => 'user', :action => 'dashboard'}
   end
+
+
+  def choose_layout
+    return "login" if action_name == 'login' or action_name == 'set_new_password'
+    return "forgotpw" if action_name == 'forgot_password'
+    return "dashboard" if action_name == 'dashboard'
+    "application"
+  end
+
+  def user_params
+    params.require(:user).permit!
+  end
+
 end
 

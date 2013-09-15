@@ -23,3 +23,5 @@ gem 'rspec-rails'
 gem 'will_paginate'
 gem 'wicked_pdf'
 gem 'declarative_authorization'
+
+gem 'puma'
