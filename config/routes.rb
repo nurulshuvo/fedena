@@ -34,11 +34,12 @@ Fedena::Application.routes.draw do
 
   get 'courses/manage_course', :controller => 'courses', :action => 'manage_course'
   get 'courses/manage_batches', :controller => 'courses', :action => 'manage_batches'
-  resources :courses, :has_many => :batches, :collection => {:grouped_batches => [:get, :post], :create_batch_group => [:get, :post], :edit_batch_group => [:get, :post], :update_batch_group => [:get, :post], :delete_batch_group => [:get, :post], :assign_subject_amount => [:get, :post], :edit_subject_amount => [:get, :post], :destroy_subject_amount => [:get, :post]}
+  resources :courses do
+    resources :batches, :collection => {:grouped_batches => [:get, :post], :create_batch_group => [:get, :post], :edit_batch_group => [:get, :post], :update_batch_group => [:get, :post], :delete_batch_group => [:get, :post], :assign_subject_amount => [:get, :post], :edit_subject_amount => [:get, :post], :destroy_subject_amount => [:get, :post]}
+  end
 
   resources :batches, :collection => {:batches_ajax => [:get]} do
     resources :exam_groups
-    #resources :additional_exam_groups
     resources :elective_groups, :as => :electives
   end
 
@@ -60,7 +61,6 @@ Fedena::Application.routes.draw do
   get 'scheduled_jobs/:job_object', :controller => "scheduled_jobs", :action => "index"
 
 
-  #get 'parts/:number', :controller => 'inventory', :action => 'sho
   get ':controller/:action/:id'
   get ':controller/:action'
   get ':controller/:action/:id/:id2'

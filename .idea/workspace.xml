@@ -2,36 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" name="Default" comment="upgraded up to models and helpers">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/attendances/show.js" afterPath="$PROJECT_DIR$/app/views/attendances/show.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_main_menu.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_main_menu.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/attendances/_register.html.erb" afterPath="$PROJECT_DIR$/app/views/attendances/_register.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/attendances_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/attendances_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/configuration_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/configuration_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/course.rb" afterPath="$PROJECT_DIR$/app/models/course.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/courses_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/courses_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/courses_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/courses_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/_layouts/dashboard.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/_layouts/dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user/dashboard.erb" afterPath="$PROJECT_DIR$/app/views/user/dashboard.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/dashboard.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/dashboard.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/subjects/show.js.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/subjects/show.rjs" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subjects/_subjects.html.erb" afterPath="$PROJECT_DIR$/app/views/subjects/_subjects.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/student/admission1.html.erb" afterPath="$PROJECT_DIR$/app/views/student/admission1.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/fedena.iml" afterPath="$PROJECT_DIR$/.idea/fedena.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/fedena_setting.rb" afterPath="$PROJECT_DIR$/config/initializers/fedena_setting.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/finance_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/finance_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/class_timings/index.html.erb" afterPath="$PROJECT_DIR$/app/views/class_timings/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/_layouts/login.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/_layouts/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/new.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/timetable/new_timetable.html.erb" afterPath="$PROJECT_DIR$/app/views/timetable/new_timetable.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subjects/index.html.erb" afterPath="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/elective_groups/new.html.erb" afterPath="$PROJECT_DIR$/app/views/elective_groups/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exam_groups/new.html.erb" afterPath="$PROJECT_DIR$/app/views/exam_groups/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/configuration/settings.html.erb" afterPath="$PROJECT_DIR$/app/views/configuration/settings.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/student.rb" afterPath="$PROJECT_DIR$/app/models/student.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/_layouts/style.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/_layouts/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/subject.rb" afterPath="$PROJECT_DIR$/app/models/subject.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/batches/show.html.erb" afterPath="$PROJECT_DIR$/app/views/batches/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fedena.iws" />
@@ -39,7 +21,7 @@
     <file path="/Dummy.txt" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379399184736" ignored="false" />
     <file path="/Gemfile" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379399632826" ignored="false" />
     <file path="/a.dummy" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379307863574" ignored="false" />
-    <file path="/routes.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379246445207" ignored="false" />
+    <file path="/routes.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379416499973" ignored="false" />
     <file path="/application_controller.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379276055014" ignored="false" />
     <file path="/application.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379240273536" ignored="false" />
     <file path="/configuration.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379238263902" ignored="false" />
@@ -54,7 +36,7 @@
     <file path="/application.html.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379399395664" ignored="false" />
     <file path="/student.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379253480836" ignored="false" />
     <file path="/profile.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379254414483" ignored="false" />
-    <file path="/application_helper.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379275373333" ignored="false" />
+    <file path="/application_helper.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379413012103" ignored="false" />
     <file path="/_month.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379255127508" ignored="false" />
     <file path="/_news_bar.html.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379267581571" ignored="false" />
     <file path="/_main_menu.html.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379401916074" ignored="false" />
@@ -64,10 +46,10 @@
     <file path="/show.js" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379277184450" ignored="false" />
     <file path="/application.js" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379305231477" ignored="false" />
     <file path="/dashboard.html.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379307751627" ignored="false" />
-    <file path="/show.js.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379306312047" ignored="false" />
+    <file path="/show.js.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379415758943" ignored="false" />
     <file path="/_register.html.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379306477891" ignored="false" />
     <file path="/fedena_setting.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379307634457" ignored="false" />
-    <file path="/new.html.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379401474109" ignored="false" />
+    <file path="/new.html.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379416661673" ignored="false" />
     <file path="/courses_helper.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379309874591" ignored="false" />
     <file path="/course.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379401428793" ignored="false" />
     <file path="$USER_HOME$/irfanLab/mygems/calendar_date_select/lib/calendar_date_select/calendar_date_select.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379312298299" ignored="false" />
@@ -75,6 +57,10 @@
     <file path="/configuration_controller.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379401096595" ignored="false" />
     <file path="/finance_controller.rb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379401821646" ignored="false" />
     <file path="/settings.html.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379402516958" ignored="false" />
+    <file path="/index.html.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379415450307" ignored="false" />
+    <file path="/_subjects.html.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379416007951" ignored="false" />
+    <file path="/show.html.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379416597090" ignored="false" />
+    <file path="/admission1.html.erb" changelist="5ccab8e2-15d1-4be6-b45f-1d80b6a73a11" time="1379416842429" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,150 +80,165 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/courses/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="107" selection-start="2308" selection-end="2308" vertical-scroll-proportion="-5.5416665">
-              <folding>
-                <element signature="e#1095#1111#1" expanded="true" />
-                <element signature="e#1295#1312#1" expanded="true" />
-                <element signature="e#1497#1506#1" expanded="true" />
-                <element signature="e#1945#1963#0" expanded="true" />
-                <element signature="e#2147#2156#1" expanded="true" />
-                <element signature="e#2412#2427#1" expanded="true" />
-                <element signature="e#2729#2742#1" expanded="true" />
-                <element signature="e#3003#3012#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="finance_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/finance_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="67" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_main_menu.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_menu.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="115" selection-start="3679" selection-end="3679" vertical-scroll-proportion="-1.2857143">
-              <folding>
-                <element signature="e#85#104#0" expanded="true" />
-                <element signature="e#232#245#0" expanded="true" />
-                <element signature="e#377#392#1" expanded="true" />
-                <element signature="e#511#535#1" expanded="true" />
-                <element signature="e#592#614#1" expanded="true" />
-                <element signature="e#1361#1376#1" expanded="true" />
-                <element signature="e#1635#1659#1" expanded="true" />
-                <element signature="e#1774#1796#1" expanded="true" />
-                <element signature="e#2240#2255#1" expanded="true" />
-                <element signature="e#2545#2569#1" expanded="true" />
-                <element signature="e#2684#2706#1" expanded="true" />
-                <element signature="e#2927#2940#1" expanded="true" />
-                <element signature="e#3105#3129#1" expanded="true" />
-                <element signature="e#3258#3286#1" expanded="true" />
-                <element signature="e#3444#3463#1" expanded="true" />
-                <element signature="e#3593#3614#1" expanded="true" />
-                <element signature="e#3784#3820#1" expanded="true" />
-                <element signature="e#3983#3998#1" expanded="true" />
-                <element signature="e#4126#4140#0" expanded="true" />
-                <element signature="e#4303#4322#1" expanded="true" />
-                <element signature="e#4533#4554#1" expanded="true" />
-                <element signature="e#4721#4740#1" expanded="true" />
-                <element signature="e#4905#4927#1" expanded="true" />
-                <element signature="e#5087#5104#1" expanded="true" />
-                <element signature="e#5258#5277#1" expanded="true" />
-                <element signature="e#5430#5452#1" expanded="true" />
-                <element signature="e#5569#5587#1" expanded="true" />
-                <element signature="e#5591#5610#1" expanded="true" />
-                <element signature="e#5750#5766#1" expanded="true" />
-                <element signature="e#5770#5788#1" expanded="true" />
-                <element signature="e#5948#5967#1" expanded="true" />
-                <element signature="n#t('more')#0;n#!!top" expanded="true" />
-                <element signature="e#6643#6661#1" expanded="true" />
-                <element signature="e#6788#6804#1" expanded="true" />
-                <element signature="e#7501#7521#1" expanded="true" />
-                <element signature="e#8119#8139#1" expanded="true" />
-                <element signature="e#8973#8987#1" expanded="true" />
-                <element signature="e#9111#9131#1" expanded="true" />
-                <element signature="e#9272#9291#1" expanded="true" />
-                <element signature="e#9516#9528#1" expanded="true" />
-                <element signature="e#9704#9733#1" expanded="true" />
-                <element signature="e#9920#9950#1" expanded="true" />
-                <element signature="e#10127#10146#1" expanded="true" />
-                <element signature="e#10309#10329#1" expanded="true" />
-                <element signature="e#10503#10524#1" expanded="true" />
-                <element signature="e#10767#10796#1" expanded="true" />
-                <element signature="e#11021#11038#1" expanded="true" />
-                <element signature="e#11225#11239#1" expanded="true" />
-                <element signature="e#11333#11346#1" expanded="true" />
-                <element signature="e#11440#11457#1" expanded="true" />
-                <element signature="e#11553#11567#1" expanded="true" />
-                <element signature="e#11658#11685#1" expanded="true" />
-                <element signature="e#11837#11854#1" expanded="true" />
-                <element signature="e#11972#12003#1" expanded="true" />
-                <element signature="e#12179#12193#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/configuration/settings.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="156" selection-start="1829" selection-end="1829" vertical-scroll-proportion="-0.9183673">
-              <folding>
-                <element signature="n#t('configuration_text')#0;n#!!top" expanded="true" />
-                <element signature="n#t('general_settings')#0;n#!!top" expanded="true" />
-                <element signature="e#660#684#0" expanded="true" />
-                <element signature="e#963#990#0" expanded="true" />
-                <element signature="e#1275#1300#0" expanded="true" />
-                <element signature="e#1597#1625#0" expanded="true" />
-                <element signature="e#1748#1777#1" expanded="true" />
-                <element signature="e#2038#2066#0" expanded="true" />
-                <element signature="e#2506#2532#0" expanded="true" />
-                <element signature="e#2982#2995#1" expanded="true" />
-                <element signature="e#3709#3721#0" expanded="true" />
-                <element signature="e#4133#4151#0" expanded="true" />
-                <element signature="e#4424#4440#0" expanded="true" />
-                <element signature="e#4449#4462#0" expanded="true" />
-                <element signature="e#4471#4488#0" expanded="true" />
-                <element signature="e#4730#4748#0" expanded="true" />
-                <element signature="e#4861#4872#1" expanded="true" />
-                <element signature="e#4889#4901#1" expanded="true" />
-                <element signature="e#5112#5140#0" expanded="true" />
-                <element signature="e#5258#5269#0" expanded="true" />
-                <element signature="e#5295#5303#0" expanded="true" />
-                <element signature="e#5423#5432#0" expanded="true" />
-                <element signature="e#6304#6331#0" expanded="true" />
-                <element signature="e#6455#6482#0" expanded="true" />
-                <element signature="e#6751#6779#0" expanded="true" />
-                <element signature="e#6906#6934#0" expanded="true" />
-                <element signature="e#7134#7162#0" expanded="true" />
-                <element signature="e#7278#7306#0" expanded="true" />
-                <element signature="e#7591#7602#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="40" selection-start="3926" selection-end="3926" vertical-scroll-proportion="-2.6">
+            <state line="37" column="346" selection-start="2752" selection-end="2752" vertical-scroll-proportion="-1.7">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_timetable.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_subjects.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/subjects/_subjects.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="39" selection-start="3190" selection-end="3191" vertical-scroll-proportion="-1.2857143">
+              <folding>
+                <element signature="e#78#101#1" expanded="true" />
+                <element signature="e#414#448#0" expanded="true" />
+                <element signature="e#961#975#0" expanded="true" />
+                <element signature="e#1428#1444#0" expanded="true" />
+                <element signature="e#1558#1581#0" expanded="true" />
+                <element signature="e#1682#1698#0" expanded="true" />
+                <element signature="e#1856#1875#1" expanded="true" />
+                <element signature="e#2123#2146#1" expanded="true" />
+                <element signature="e#2450#2484#0" expanded="true" />
+                <element signature="e#2942#2956#0" expanded="true" />
+                <element signature="e#3416#3432#0" expanded="true" />
+                <element signature="e#3553#3576#0" expanded="true" />
+                <element signature="e#3683#3699#0" expanded="true" />
+                <element signature="e#3865#3884#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/elective_groups/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="65" selection-start="756" selection-end="756" vertical-scroll-proportion="-2.6666667">
+              <folding>
+                <element signature="n#t('batches_text')#0;n#!!top" expanded="true" />
+                <element signature="e#133#150#1" expanded="true" />
+                <element signature="e#356#369#0" expanded="true" />
+                <element signature="e#595#611#0" expanded="true" />
+                <element signature="e#710#720#1" expanded="true" />
+                <element signature="e#787#801#1" expanded="true" />
+                <element signature="n#t('new_text')#0;n#!!top" expanded="true" />
+                <element signature="e#1125#1134#1" expanded="true" />
+                <element signature="e#1269#1278#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/batches/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="60" selection-start="3002" selection-end="3002" vertical-scroll-proportion="-19.833334">
+              <folding>
+                <element signature="n#t('courses_text')#0;n#!!top" expanded="true" />
+                <element signature="n#t('batches_text')#0;n#!!top" expanded="true" />
+                <element signature="e#439#454#1" expanded="true" />
+                <element signature="e#536#550#1" expanded="true" />
+                <element signature="e#625#641#1" expanded="true" />
+                <element signature="e#700#723#1" expanded="true" />
+                <element signature="n#t('manage')#0;n#!!top" expanded="true" />
+                <element signature="e#920#932#1" expanded="true" />
+                <element signature="e#1044#1058#1" expanded="true" />
+                <element signature="e#1126#1143#1" expanded="true" />
+                <element signature="e#1596#1625#0" expanded="true" />
+                <element signature="e#1915#1938#0" expanded="true" />
+                <element signature="e#2063#2089#0" expanded="true" />
+                <element signature="e#2183#2200#1" expanded="true" />
+                <element signature="n#t('batch')#0;n#!!top" expanded="true" />
+                <element signature="n#t('sl_no')#0;n#!!top" expanded="true" />
+                <element signature="n#t('name')#0;n#!!top" expanded="true" />
+                <element signature="n#t('admission_number')#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/exam_groups/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="11" selection-start="1208" selection-end="1208" vertical-scroll-proportion="-6.875">
+              <folding>
+                <element signature="n#t('exams_text')#0;n#!!top" expanded="true" />
+                <element signature="n#t('new_exam')#0;n#!!top" expanded="true" />
+                <element signature="e#461#477#0" expanded="true" />
+                <element signature="e#576#586#1" expanded="true" />
+                <element signature="e#653#667#1" expanded="true" />
+                <element signature="n#t('new_exam')#1;n#!!top" expanded="true" />
+                <element signature="e#1414#1428#0" expanded="true" />
+                <element signature="e#1856#1870#0" expanded="true" />
+                <element signature="e#1960#1981#0" expanded="true" />
+                <element signature="e#2166#2188#0" expanded="true" />
+                <element signature="e#2343#2354#0" expanded="true" />
+                <element signature="e#2571#2585#0" expanded="true" />
+                <element signature="e#2675#2685#0" expanded="true" />
+                <element signature="e#2696#2707#0" expanded="true" />
+                <element signature="e#2720#2741#0" expanded="true" />
+                <element signature="e#2853#2862#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admission1.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/student/admission1.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="90" column="33" selection-start="3683" selection-end="3683" vertical-scroll-proportion="0.94071144">
+              <folding>
+                <element signature="n#t('admission')#0;n#!!top" expanded="true" />
+                <element signature="n#t('student_detail_step1')#0;n#!!top" expanded="true" />
+                <element signature="e#522#552#0" expanded="true" />
+                <element signature="e#976#988#0" expanded="true" />
+                <element signature="e#1035#1047#0" expanded="true" />
+                <element signature="e#1183#1204#0" expanded="true" />
+                <element signature="e#1708#1727#0" expanded="true" />
+                <element signature="e#2130#2151#0" expanded="true" />
+                <element signature="e#2275#2290#0" expanded="true" />
+                <element signature="e#2545#2561#0" expanded="true" />
+                <element signature="e#2778#2792#0" expanded="true" />
+                <element signature="e#3065#3086#0" expanded="true" />
+                <element signature="e#3366#3384#0" expanded="true" />
+                <element signature="e#3890#3901#0" expanded="true" />
+                <element signature="e#4033#4042#0" expanded="true" />
+                <element signature="e#4201#4212#0" expanded="true" />
+                <element signature="e#4435#4451#0" expanded="true" />
+                <element signature="e#4600#4612#1" expanded="true" />
+                <element signature="e#4770#4786#0" expanded="true" />
+                <element signature="e#5019#5035#0" expanded="true" />
+                <element signature="e#5398#5416#0" expanded="true" />
+                <element signature="e#5643#5656#0" expanded="true" />
+                <element signature="e#5794#5816#1" expanded="true" />
+                <element signature="e#5972#5985#0" expanded="true" />
+                <element signature="e#6197#6217#0" expanded="true" />
+                <element signature="e#6345#6362#0" expanded="true" />
+                <element signature="e#6590#6607#0" expanded="true" />
+                <element signature="e#6835#6844#0" expanded="true" />
+                <element signature="e#7063#7073#0" expanded="true" />
+                <element signature="e#7296#7304#0" expanded="true" />
+                <element signature="e#7529#7541#0" expanded="true" />
+                <element signature="e#7869#7879#0" expanded="true" />
+                <element signature="e#8101#8112#0" expanded="true" />
+                <element signature="e#8333#8343#0" expanded="true" />
+                <element signature="e#8627#8650#0" expanded="true" />
+                <element signature="e#9894#9911#0" expanded="true" />
+                <element signature="e#10045#10062#0" expanded="true" />
+                <element signature="e#10071#10084#0" expanded="true" />
+                <element signature="e#10300#10321#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_timetable.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/timetable/new_timetable.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="7" selection-start="701" selection-end="701" vertical-scroll-proportion="0.5833333">
+            <state line="25" column="7" selection-start="701" selection-end="701" vertical-scroll-proportion="-5.25">
               <folding>
                 <element signature="n#t('timetable_text')#0;n#!!top" expanded="true" />
                 <element signature="n#t('new_timetable')#0;n#!!top" expanded="true" />
@@ -249,40 +250,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configuration_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/configuration_controller.rb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/subjects/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="8" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="courses_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="4" selection-start="6392" selection-end="6392" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/course.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="52" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+            <state line="45" column="35" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-13.583333">
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#t('subject')#0;n#!!top" expanded="true" />
+                <element signature="n#t('home')#0;n#!!top" expanded="true" />
+                <element signature="n#t('select_a_batch')#0;n#!!top" expanded="true" />
+                <element signature="e#819#838#0" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="subjects_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/subjects_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="16" selection-start="2756" selection-end="2756" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.js.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/subjects/show.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="68" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -310,22 +306,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/_layouts/dashboard.css" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/_layouts/login.css" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/_layouts/style.css" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/controllers/configuration_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/course.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/courses_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/courses/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/finance_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_main_menu.html.erb" />
         <option value="$PROJECT_DIR$/app/views/configuration/settings.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/timetable/new_timetable.html.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/subjects/show.rjs" />
+        <option value="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/subjects/show.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/subjects/_subjects.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/elective_groups/new.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/batches/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/exam_groups/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/student/admission1.html.erb" />
       </list>
     </option>
   </component>
@@ -374,6 +370,116 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="fedena" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-rails (v3.0.4, RVM: ruby-2.0.0-p195 [fedena]) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-rails (v3.0.4, RVM: ruby-2.0.0-p195 [fedena]) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actionpack (v4.0.0, RVM: ruby-2.0.0-p195 [fedena]) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actionpack (v4.0.0, RVM: ruby-2.0.0-p195 [fedena]) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action_view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actionpack (v4.0.0, RVM: ruby-2.0.0-p195 [fedena]) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action_view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -458,7 +564,95 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="subjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exam_groups" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elective_groups" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -503,6 +697,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="configuration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batches" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -593,6 +809,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedena" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elective_groups" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -730,7 +972,7 @@
       <recent name="$PROJECT_DIR$/vendor" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: fedena">
+  <component name="RunManager" selected="Rake.routes">
     <configuration default="false" name="Rails console: fedena" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="fedena" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -1152,15 +1394,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: fedena" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.fedena:plugins:db:seed" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.db:seed" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.auth:used_privileges" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.routes" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="7" class="java.lang.String" itemvalue="Rails.Production: fedena" />
-      <item index="8" class="java.lang.String" itemvalue="Rails.Development: fedena" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: fedena" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: fedena" />
+      <item index="4" class="java.lang.String" itemvalue="IRB console.Rails console: fedena" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.fedena:plugins:db:seed" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.db:seed" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.auth:used_privileges" />
+      <item index="8" class="java.lang.String" itemvalue="Rake.routes" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1214,18 +1456,18 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38030303" sideWeight="0.5276873" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4723127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4723127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39739415" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1295,108 +1537,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/helpers/application_helper.rb</url>
-          <line>35</line>
+          <line>18</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/courses/new.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_layouts/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="32" selection-end="32" vertical-scroll-proportion="0.10909091">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_layouts/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="32" selection-end="32" vertical-scroll-proportion="0.114503816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_layouts/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="32" selection-end="32" vertical-scroll-proportion="0.114503816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/error_page.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/popup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="8" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="52" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/configuration_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="8" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/course.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="4" selection-start="6392" selection-end="6392" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/courses/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="107" selection-start="2308" selection-end="2308" vertical-scroll-proportion="-5.5416665">
-          <folding>
-            <element signature="e#1095#1111#1" expanded="true" />
-            <element signature="e#1295#1312#1" expanded="true" />
-            <element signature="e#1497#1506#1" expanded="true" />
-            <element signature="e#1945#1963#0" expanded="true" />
-            <element signature="e#2147#2156#1" expanded="true" />
-            <element signature="e#2412#2427#1" expanded="true" />
-            <element signature="e#2729#2742#1" expanded="true" />
-            <element signature="e#3003#3012#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/finance_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="67" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_menu.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="115" selection-start="3679" selection-end="3679" vertical-scroll-proportion="-1.2857143">
@@ -1497,22 +1644,213 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="40" selection-start="3926" selection-end="3926" vertical-scroll-proportion="-2.6">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/timetable/new_timetable.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="7" selection-start="701" selection-end="701" vertical-scroll-proportion="0.5833333">
+        <state line="25" column="7" selection-start="701" selection-end="701" vertical-scroll-proportion="-5.25">
           <folding>
             <element signature="n#t('timetable_text')#0;n#!!top" expanded="true" />
             <element signature="n#t('new_timetable')#0;n#!!top" expanded="true" />
             <element signature="e#805#820#0" expanded="true" />
             <element signature="e#1148#1161#0" expanded="true" />
             <element signature="e#1457#1473#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p195@fedena/gems/actionpack-4.0.0/lib/action_view/helpers/javascript_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="0" selection-start="4929" selection-end="4929" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p195@fedena/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7873" column="4" selection-start="220037" selection-end="220037" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/subjects_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="16" selection-start="2756" selection-end="2756" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/subjects/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="35" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-13.583333">
+          <folding>
+            <element signature="n#t('subject')#0;n#!!top" expanded="true" />
+            <element signature="n#t('home')#0;n#!!top" expanded="true" />
+            <element signature="n#t('select_a_batch')#0;n#!!top" expanded="true" />
+            <element signature="e#819#838#0" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/subjects/show.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="68" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/elective_groups/new.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/subjects/_subjects.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="39" selection-start="3190" selection-end="3191" vertical-scroll-proportion="-1.2857143">
+          <folding>
+            <element signature="e#78#101#1" expanded="true" />
+            <element signature="e#414#448#0" expanded="true" />
+            <element signature="e#961#975#0" expanded="true" />
+            <element signature="e#1428#1444#0" expanded="true" />
+            <element signature="e#1558#1581#0" expanded="true" />
+            <element signature="e#1682#1698#0" expanded="true" />
+            <element signature="e#1856#1875#1" expanded="true" />
+            <element signature="e#2123#2146#1" expanded="true" />
+            <element signature="e#2450#2484#0" expanded="true" />
+            <element signature="e#2942#2956#0" expanded="true" />
+            <element signature="e#3416#3432#0" expanded="true" />
+            <element signature="e#3553#3576#0" expanded="true" />
+            <element signature="e#3683#3699#0" expanded="true" />
+            <element signature="e#3865#3884#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="346" selection-start="2752" selection-end="2752" vertical-scroll-proportion="-1.7">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/elective_groups/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="65" selection-start="756" selection-end="756" vertical-scroll-proportion="-2.6666667">
+          <folding>
+            <element signature="n#t('batches_text')#0;n#!!top" expanded="true" />
+            <element signature="e#133#150#1" expanded="true" />
+            <element signature="e#356#369#0" expanded="true" />
+            <element signature="e#595#611#0" expanded="true" />
+            <element signature="e#710#720#1" expanded="true" />
+            <element signature="e#787#801#1" expanded="true" />
+            <element signature="n#t('new_text')#0;n#!!top" expanded="true" />
+            <element signature="e#1125#1134#1" expanded="true" />
+            <element signature="e#1269#1278#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/batches/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="60" selection-start="3002" selection-end="3002" vertical-scroll-proportion="-19.833334">
+          <folding>
+            <element signature="n#t('courses_text')#0;n#!!top" expanded="true" />
+            <element signature="n#t('batches_text')#0;n#!!top" expanded="true" />
+            <element signature="e#439#454#1" expanded="true" />
+            <element signature="e#536#550#1" expanded="true" />
+            <element signature="e#625#641#1" expanded="true" />
+            <element signature="e#700#723#1" expanded="true" />
+            <element signature="n#t('manage')#0;n#!!top" expanded="true" />
+            <element signature="e#920#932#1" expanded="true" />
+            <element signature="e#1044#1058#1" expanded="true" />
+            <element signature="e#1126#1143#1" expanded="true" />
+            <element signature="e#1596#1625#0" expanded="true" />
+            <element signature="e#1915#1938#0" expanded="true" />
+            <element signature="e#2063#2089#0" expanded="true" />
+            <element signature="e#2183#2200#1" expanded="true" />
+            <element signature="n#t('batch')#0;n#!!top" expanded="true" />
+            <element signature="n#t('sl_no')#0;n#!!top" expanded="true" />
+            <element signature="n#t('name')#0;n#!!top" expanded="true" />
+            <element signature="n#t('admission_number')#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/exam_groups/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="11" selection-start="1208" selection-end="1208" vertical-scroll-proportion="-6.875">
+          <folding>
+            <element signature="n#t('exams_text')#0;n#!!top" expanded="true" />
+            <element signature="n#t('new_exam')#0;n#!!top" expanded="true" />
+            <element signature="e#461#477#0" expanded="true" />
+            <element signature="e#576#586#1" expanded="true" />
+            <element signature="e#653#667#1" expanded="true" />
+            <element signature="n#t('new_exam')#1;n#!!top" expanded="true" />
+            <element signature="e#1414#1428#0" expanded="true" />
+            <element signature="e#1856#1870#0" expanded="true" />
+            <element signature="e#1960#1981#0" expanded="true" />
+            <element signature="e#2166#2188#0" expanded="true" />
+            <element signature="e#2343#2354#0" expanded="true" />
+            <element signature="e#2571#2585#0" expanded="true" />
+            <element signature="e#2675#2685#0" expanded="true" />
+            <element signature="e#2696#2707#0" expanded="true" />
+            <element signature="e#2720#2741#0" expanded="true" />
+            <element signature="e#2853#2862#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/student/admission1.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="33" selection-start="3683" selection-end="3683" vertical-scroll-proportion="0.94071144">
+          <folding>
+            <element signature="n#t('admission')#0;n#!!top" expanded="true" />
+            <element signature="n#t('student_detail_step1')#0;n#!!top" expanded="true" />
+            <element signature="e#522#552#0" expanded="true" />
+            <element signature="e#976#988#0" expanded="true" />
+            <element signature="e#1035#1047#0" expanded="true" />
+            <element signature="e#1183#1204#0" expanded="true" />
+            <element signature="e#1708#1727#0" expanded="true" />
+            <element signature="e#2130#2151#0" expanded="true" />
+            <element signature="e#2275#2290#0" expanded="true" />
+            <element signature="e#2545#2561#0" expanded="true" />
+            <element signature="e#2778#2792#0" expanded="true" />
+            <element signature="e#3065#3086#0" expanded="true" />
+            <element signature="e#3366#3384#0" expanded="true" />
+            <element signature="e#3890#3901#0" expanded="true" />
+            <element signature="e#4033#4042#0" expanded="true" />
+            <element signature="e#4201#4212#0" expanded="true" />
+            <element signature="e#4435#4451#0" expanded="true" />
+            <element signature="e#4600#4612#1" expanded="true" />
+            <element signature="e#4770#4786#0" expanded="true" />
+            <element signature="e#5019#5035#0" expanded="true" />
+            <element signature="e#5398#5416#0" expanded="true" />
+            <element signature="e#5643#5656#0" expanded="true" />
+            <element signature="e#5794#5816#1" expanded="true" />
+            <element signature="e#5972#5985#0" expanded="true" />
+            <element signature="e#6197#6217#0" expanded="true" />
+            <element signature="e#6345#6362#0" expanded="true" />
+            <element signature="e#6590#6607#0" expanded="true" />
+            <element signature="e#6835#6844#0" expanded="true" />
+            <element signature="e#7063#7073#0" expanded="true" />
+            <element signature="e#7296#7304#0" expanded="true" />
+            <element signature="e#7529#7541#0" expanded="true" />
+            <element signature="e#7869#7879#0" expanded="true" />
+            <element signature="e#8101#8112#0" expanded="true" />
+            <element signature="e#8333#8343#0" expanded="true" />
+            <element signature="e#8627#8650#0" expanded="true" />
+            <element signature="e#9894#9911#0" expanded="true" />
+            <element signature="e#10045#10062#0" expanded="true" />
+            <element signature="e#10071#10084#0" expanded="true" />
+            <element signature="e#10300#10321#1" expanded="true" />
           </folding>
         </state>
       </provider>
