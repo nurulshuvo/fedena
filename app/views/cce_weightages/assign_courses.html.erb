@@ -37,7 +37,7 @@
       <p class="flash-msg"> <%= flash[:notice] %> </p>
     <% end %>
   </div>
-  <% form_for @weightage do |f| %>
+  <%= form_for @weightage do |f| %>
     <ul id="category-list">
       <li class="listheading">
         <div class="heading-name"><%= t('select_courses') %></div>

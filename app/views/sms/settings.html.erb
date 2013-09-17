@@ -27,7 +27,7 @@
 </div>
 
 <div id="page-yield">
-<% form_for :sms_settings do |s| %>
+<%= form_for :sms_settings do |s| %>
   <div id="list">
   <div class="name_list<%=cycle('odd', 'even')%>"><li>
   <label><%= s.check_box :application_enabled, :checked=>@application_sms_enabled.is_enabled %>
@@ -38,7 +38,7 @@
 <% end %>
 <% unless @application_sms_enabled.is_enabled == false %>
   <h4><%= t('general_sms_setting') %>:</h4>
-  <% form_for :general_settings, :url=>{:controller=>"sms",:action=>"update_general_sms_settings"} do |sms| %>
+  <%= form_for :general_settings, :url=>{:controller=>"sms",:action=>"update_general_sms_settings"} do |sms| %>
 
   <div id="list">
   <div class="name_list<%=cycle('odd', 'even')%>"><li>

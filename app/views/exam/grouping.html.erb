@@ -118,7 +118,7 @@
 <%#*</div>%>
     <% unless @exam_groups.empty? %>
       <h4><%= t('connect_exams') %></h4>
-      <% form_for :exam_grouping do |f| %>
+      <%= form_for :exam_grouping do |f| %>
         <table id="listing" align="center" width="100%" cellpadding="1" cellspacing="1">
           <% count=@exam_groups.count.to_i - 1 %>
           <tr class="tr-head">

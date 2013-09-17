@@ -52,7 +52,7 @@
 
   <div class="fees">
     <% if permitted_to? :fees_received, :finance %>
-      <% form_for :fee do |f|%>
+      <%= form_for :fee do |f|%>
         <% if @student.has_paid_fees == true %>
           <%= check_box :fee, :has_paid_fees,:checked=>true  %> <%= t('has_paid_all_the_fees') %>
         <% else %>

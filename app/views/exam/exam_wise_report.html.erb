@@ -36,7 +36,7 @@
     <%= t('exam_wise_report') %>
   </div>
   <div class="box">
-    <% form_for :exam_report, :url=>{:action=>'generated_report'} do |x| %>
+    <%= form_for :exam_report, :url=>{:action=>'generated_report'} do |x| %>
 
       <div class="text-input-bg">
         <%= select :exam_report, :batch_id,

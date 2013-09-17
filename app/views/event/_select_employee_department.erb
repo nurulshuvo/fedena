@@ -19,7 +19,7 @@
 
 
 
-<% form_for :select_options, :url=>{:controller=>"event",:action=>"department_event", :id=>@event_id} do |m| %>
+<%= form_for :select_options, :url=>{:controller=>"event",:action=>"department_event", :id=>@event_id} do |m| %>
       <ul id="category-list">
       <% @employee_department.each do |department| %>
           <li class="list<%= cycle('odd','even') %>">

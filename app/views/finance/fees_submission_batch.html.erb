@@ -28,7 +28,7 @@
 <div id="page-yield">
 
   <div id="batchs1">
-    <% form_for :fees_submission_batch do %>
+    <%= form_for :fees_submission_batch do %>
       <div class="label-field-pair"><label><%= t('select_a_batch') %></label>
         <div class="text-input-bg"> <%= select :fees_submission, :batch_id, @batches.map { |c| [c.full_name, c.id] },
             {:prompt => "#{t('select_a_batch')}"},

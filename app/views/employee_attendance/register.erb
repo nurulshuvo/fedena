@@ -46,7 +46,7 @@
     <p class="flash-msg"> <%= flash[:notice] %> </p>
   <% end %>
 
-  <% form_for :employee_department do |s| %>
+  <%= form_for :employee_department do |s| %>
     <div class="label-field-pair">
       <label for="employee_department_select"><%= t('select_the_department') %></label>
       <div class="text-input-bg"><%= select :employee_department, :department_id, @departments.map {|c| [c.name, c.id]},
@@ -58,7 +58,7 @@
 
 
   <div id="form-content">
-    <% form_for :employee_attendance do |e| %>
+    <%= form_for :employee_attendance do |e| %>
       <%= error_messages_for 'employee_attendance' %>
 
       <div class="label-field-pair">

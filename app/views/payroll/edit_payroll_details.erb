@@ -54,7 +54,7 @@
 
   </div>
   
-  <% form_for :manage_payroll do |s| %>
+  <%= form_for :manage_payroll do |s| %>
     <% @independent_categories.each do |c| %>
       <%- val = EmployeeSalaryStructure.find_by_employee_id_and_payroll_category_id(@employee, c) -%>
       <div class="label-field-pair">

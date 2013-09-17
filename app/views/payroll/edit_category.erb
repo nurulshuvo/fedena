@@ -36,7 +36,7 @@
     <p class="flash-msg"> <%= flash[:notice] %> </p>
   <% end %>
 
-  <% form_for :category do |c| %>
+  <%= form_for :category do |c| %>
     <%= error_messages_for 'category' %>
     <div id="form-content">
       <div class="label-field-pair">

@@ -31,7 +31,7 @@
 
   <% unless flash[:notice].nil? %> <p class="flash-msg"> <%= flash[:notice] %> </p> <% end %>
 
-  <% form_for :parent_detail do |s| %>
+  <%= form_for :parent_detail do |s| %>
 
     <div id="admission1_form">
 

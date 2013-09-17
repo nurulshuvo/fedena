@@ -36,7 +36,7 @@
   </div>
   <div class="box">
 
-    <% form_for :transcript, :url=>{:action=>'student_transcript'} do |x| %>
+    <%= form_for :transcript, :url=>{:action=>'student_transcript'} do |x| %>
       <div class="label-field-pair">
         <label for="student_course"><%= t('select_a_batch') %> :</label>
         <div  class="text-input-bg">

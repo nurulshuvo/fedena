@@ -44,7 +44,7 @@
   <% unless @financefee.is_paid %>
     <%= render :partial=> 'defaulters_fine_submission' if @fine.nil? %>
   <% end %>
-  <% form_for :fees, :url => {:action => 'pay_fees_defaulters', :student => @student.id,:date => @date.id, :fine => @fine} do |form| %>
+  <%= form_for :fees, :url => {:action => 'pay_fees_defaulters', :student => @student.id,:date => @date.id, :fine => @fine} do |form| %>
     <% unless @fee_particulars.nil? %>
 
 

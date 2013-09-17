@@ -28,7 +28,7 @@
 <div id="page-yield">
   <div class="box">
      <% unless flash[:notice].nil? %><p class="flash-msg"><%= flash[:notice] %></p><% end %>
-    <% form_for :report, :url => {:action => 'income_list_update'} do |form| %>
+    <%= form_for :report, :url => {:action => 'income_list_update'} do |form| %>
       <div class="label-field-pair">
         <label><%= t('select_start_date') %>:</label>
         <div class="input-container"><%= calendar_date_select_tag 'start_date', I18n.l(Date.today,:format=>:default),:popup=>:force %></div>

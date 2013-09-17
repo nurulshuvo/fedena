@@ -34,7 +34,7 @@
   <% unless flash[:notice].nil? %><p class="flash-msg"><%= flash[:notice] %></p><% end %>
   <div class="box">
     <%= error_messages_for :donation %>
-    <% form_for :donation do |f| %>
+    <%= form_for :donation do |f| %>
 
       <div id="create_user_form">
         <div class="label-field-pair">

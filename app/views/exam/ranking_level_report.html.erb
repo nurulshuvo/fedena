@@ -36,7 +36,7 @@
   </div>
   <div class="box">
 
-    <% form_for :ranking_level_report, :url=>{:action=>'student_ranking_level_report'} do |x| %>
+    <%= form_for :ranking_level_report, :url=>{:action=>'student_ranking_level_report'} do |x| %>
       <div class="label-field-pair">
         <label for="student_course"><%= t('select_mode') %>:</label>
         <div  class="text-input-bg">

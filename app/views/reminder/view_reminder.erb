@@ -53,7 +53,7 @@
       
     </div>
     <div id="reply-form" style="display:none;">
-      <% form_for :reminder, :url=>{:id2 =>@new_reminder.id}  do |l| %>
+      <%= form_for :reminder, :url=>{:id2 =>@new_reminder.id}  do |l| %>
         <%= error_messages_for :reminder %>
         <div class="message">
           <div class="label-field-pair">

@@ -31,7 +31,7 @@
     <%= link_to "#{t('payslip_text')}", :controller => "finance", :action => "payslip_index" %> &raquo;
     <%= t('monthly_payslip') %>
   </div>
-  <% form_for :payslip do |f| %>
+  <%= form_for :payslip do |f| %>
     <div id="box">
       <div class="label-field-pair">
         <label for="student_course"><%= t('select_a_department') %>:</label>

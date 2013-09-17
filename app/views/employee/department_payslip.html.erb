@@ -27,7 +27,7 @@
 </div>
 <div id="page-yield">
   <% unless flash[:notice].nil? %><p class="flash-msg"> <%= flash[:notice] %> </p><% end %>
-  <% form_for :payslip do |f| %>
+  <%= form_for :payslip do |f| %>
     <div id="box">
       <div class="label-field-pair">
         <label for="student_course"><%= t('select_department') %>:</label>

@@ -40,7 +40,7 @@
     <p class="flash-msg"> <%= flash[:notice] %> </p>
   <% end %>
 
-  <% form_for @finance_fee_collection,
+  <%= form_for @finance_fee_collection,
     :url => {:action => 'fee_collection_create'} do |form| %>
 
     <div id="form-errors"><%= error_messages_for 'finance_fee_collection' %></div>

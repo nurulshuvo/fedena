@@ -29,7 +29,7 @@
 <div id="page-yield">
   <div class="box">
   <div id="report">
-    <% form_for :report, :url => {:action => 'report_compare'} do |form| %>
+    <%= form_for :report, :url => {:action => 'report_compare'} do |form| %>
       <div class="label-field-pair">
         <label>
           <%= t('select_start_date') %>:

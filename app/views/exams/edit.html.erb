@@ -45,7 +45,7 @@
 
     <h4><%= t('for_exam_group') %>- <%= @exam_group.name %></h4>
 
-    <% form_for [@exam_group, @exam] do |f| %>
+    <%= form_for [@exam_group, @exam] do |f| %>
       <%= error_messages_for :exam %>
       <div class="label-field-pair">
         <%= f.label "#{t('subject')}" %>

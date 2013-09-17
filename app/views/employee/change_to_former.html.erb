@@ -41,7 +41,7 @@
     <div id="remove-student">
       <p><%= t('paragraph') %></p>
 
-      <% form_for :remove do |f| %>
+      <%= form_for :remove do |f| %>
         <div class="label-field-pair">
           <label for="remove_descr"><%= t('reason_for_leaving') %></label>
           <div class="text-input-bg"><%= f.text_field :status_description %></div>

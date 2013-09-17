@@ -7,6 +7,9 @@ Fedena::Application.routes.draw do
   resources :class_timings
   resources :subjects
   resources :attendances, :collection => {:daily_register => :get, :subject_wise_register => :get}
+  controller :attendances do
+    get '/list_subject' => :list_subject, as: :list_subject
+  end
   resources :employee_attendances
   resources :attendance_reports
   resources :cce_exam_categories

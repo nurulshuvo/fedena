@@ -52,7 +52,7 @@
     </div>
   <% end %>
   <div class="box">
-    <% form_for :course, :url=>{:action=>:create_reports} do |f|  %>
+    <%= form_for :course, :url=>{:action=>:create_reports} do |f|  %>
       <div class="label-field-pair">
         <label for="student_course"><%= "#{t('select_a_course')}" %>:
           <%= image_tag("loader.gif",:align => "absmiddle",:border => 0,:id => "loader", :style =>"display: none;" ) %>

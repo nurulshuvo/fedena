@@ -28,7 +28,7 @@
 
 <div id="page-yield">
 
-  <% form_for :report, :url => {:action => 'update_monthly_report'} do |form| %>
+  <%= form_for :report, :url => {:action => 'update_monthly_report'} do |form| %>
     <p><%= t('select_start_date') %>:<%= calendar_date_select_tag 'start_date', I18n.localize(Date.today, :format=>:default) %></p>
     <p><%= t('select_end_date') %>:  <%= calendar_date_select_tag 'end_date', I18n.localize(Date.today, :format=>:default) %></p>
     <p><%= form.submit("► #{t('get_report')} ") %></p>

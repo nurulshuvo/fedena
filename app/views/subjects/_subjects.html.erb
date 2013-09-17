@@ -2,7 +2,7 @@
 
 <%  unless @batch.nil? %>
   <div class="add_sub">
-    <%= link_to_remote "#{t('add_normal_subject')}", :url => { :action => 'new', :id => @batch } unless defined? @elective_group %>
+    <%= link_to_remote "#{t('add_normal_subject')}", { :action => 'new', :id => @batch }, remote: true %>
   </div>
 <%  end %>
 <% unless @subjects.empty? %>
@@ -10,7 +10,7 @@
     <% unless params[:subject].nil? %>
       <% if params[:subject][:elective_group_id]=="" %>
         <div class="add_sub">
-          <%= link_to_remote t('add_subject_to_elective_group'), :url => { :controller=>"subjects",:action => 'new', :id => @batch,:id2=> params[:subject][:elective_group_id]} if defined? @elective_group%>
+          <%= link_to t('add_subject_to_elective_group'),  { :controller=>"subjects",:action => 'new', :id => @batch,:id2=> params[:subject][:elective_group_id]}, remote: true  %>
         </div>
       <% end %>
     <% end %>

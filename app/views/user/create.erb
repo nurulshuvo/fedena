@@ -30,7 +30,7 @@
 
   <% unless flash[:notice].nil? %> <p class="flash-msg"> <%= flash[:notice] %> </p> <% end %>
 
-  <% form_for :user do |f| %>
+  <%= form_for :user do |f| %>
 
     <%= f.error_messages %>
 

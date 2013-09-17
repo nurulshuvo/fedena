@@ -41,7 +41,7 @@
     <%= t('archived_grouped_exam_reports') %>
   </div>
   <div class="box">
-    <% form_for :exam_report, :url=>{:action=>'archived_batches_exam_report'} do |x| %>
+    <%= form_for :exam_report, :url=>{:action=>'archived_batches_exam_report'} do |x| %>
       <div class="label-field-pair">
         <label><%= t('select_a_course') %> :<%= image_tag("loader.gif",
             :align => "absmiddle",

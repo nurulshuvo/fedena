@@ -52,7 +52,7 @@
     <%= @exam.subject.name %>
   </div>
   <div class="box">
-    <% form_for :exam_scores, :url => {:controller=>"exam", :action=>"update_previous_marks", :exam_id=>@exam.id} do |f| %>
+    <%= form_for :exam_scores, :url => {:controller=>"exam", :action=>"update_previous_marks", :exam_id=>@exam.id} do |f| %>
 
       <table id="listing" width="100%">
         <tr class="tr-head">

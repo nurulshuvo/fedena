@@ -42,7 +42,7 @@
     <p class="flash-msg"> <%= flash[:notice] %> </p>
   <% end %>
 
-  <% form_for :manage_payroll do |s| %>
+  <%= form_for :manage_payroll do |s| %>
     <% @categories.each do |c| %>
       <%- val = MonthlyPayslip.find_by_employee_id_and_payroll_category_id(@employee, c) -%>
       <% @date=val.salary_date %>

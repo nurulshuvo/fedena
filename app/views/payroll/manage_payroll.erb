@@ -33,7 +33,7 @@
   <% end %>
 
 <div id="form-content">
-  <% form_for :manage_payroll do |s| %>
+  <%= form_for :manage_payroll do |s| %>
     <% @independent_categories.each do |c| %>
      <div class="payroll-field-pair">
      <label for="payroll_category_name"><%= c.name %></label>

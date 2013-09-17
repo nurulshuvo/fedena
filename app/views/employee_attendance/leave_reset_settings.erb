@@ -43,7 +43,7 @@
   </div>
   <div class="box">
 
-    <% form_for :FedenaConfiguration do |c| %>
+    <%= form_for :FedenaConfiguration do |c| %>
       <div class="label-field-pair">
         <label for="category_name"><%= t('enable_automatic_reset') %></label>
         <% if @auto_reset.config_value == '1' %>

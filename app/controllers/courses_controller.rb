@@ -11,6 +11,7 @@ class CoursesController < ApplicationController
 
   def new
     @course = Course.new
+    @course.batches.build
     @grade_types=Course.grading_types_as_options
   end
 

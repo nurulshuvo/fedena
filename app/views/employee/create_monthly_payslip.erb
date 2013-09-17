@@ -53,7 +53,7 @@
     <div id="errorExplanation" class="errorExplanation"><%= flash[:warn_notice] %> </div>
   <% end %>
   <div id="form-content">
-    <% form_for :manage_payroll do |s| %>
+    <%= form_for :manage_payroll do |s| %>
 
       <div class="payslip-field-pair">
         <label for="salary_date"><%= t('salary_date') %></label>

@@ -47,7 +47,7 @@
 
 
   <div id="application-list">
-    <% form_for :reminder, :url=>{:controller=>'reminder', :action=>'sent_reminder_delete' }, :html=>{:onSubmit => "return confirm('Are you sure?')"} do |f| %>
+    <%= form_for :reminder, :url=>{:controller=>'reminder', :action=>'sent_reminder_delete' }, :html=>{:onSubmit => "return confirm('Are you sure?')"} do |f| %>
       <%= hidden_field_tag :page, (params[:page].nil? ? 1 : params[:page]) %>
       <table id="listing" align="center" width="100%" cellpadding="1" cellspacing="1">
         <tr class="tr-select">

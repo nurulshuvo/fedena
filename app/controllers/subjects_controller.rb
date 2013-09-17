@@ -12,7 +12,7 @@ class SubjectsController < ApplicationController
     @batch = Batch.find params[:id] if request.xhr? and params[:id]
     @elective_group = ElectiveGroup.find params[:id2] unless params[:id2].nil?
     respond_to do |format|
-      format.js { render :action => 'new' }
+      format.js
     end
   end
 

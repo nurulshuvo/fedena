@@ -36,7 +36,7 @@
   </div>
   <div class="box">
 
-    <% form_for :exam_report, :url=>{:action=>'generated_report4'} do |x| %>
+    <%= form_for :exam_report, :url=>{:action=>'generated_report4'} do |x| %>
       <div class="label-field-pair">
         <label for="student_course"><%= t('select_a_batch') %>:
           <%= image_tag("loader.gif",:align => "absmiddle",:border => 0,:id => "loader", :style =>"display: none;" ) %>

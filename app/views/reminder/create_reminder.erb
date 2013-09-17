@@ -117,7 +117,7 @@
 
     <% current_user = @current_user %>
   </div>
-  <% form_for :reminder do |l| %>
+  <%= form_for :reminder do |l| %>
     <div id="form">
       <%= error_messages_for :reminder %>
       <%= hidden_field_tag :recipients, '' %>
