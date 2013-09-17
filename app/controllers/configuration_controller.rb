@@ -1,22 +1,6 @@
-#Fedena
-#Copyright 2011 Foradian Technologies Private Limited
-#
-#This product includes software developed at
-#Project Fedena - http://www.projectfedena.org/
-#
-#Licensed under the Apache License, Version 2.0 (the "License");
-#you may not use this file except in compliance with the License.
-#You may obtain a copy of the License at
-#
-#  http://www.apache.org/licenses/LICENSE-2.0
-#
-#Unless required by applicable law or agreed to in writing, software
-#distributed under the License is distributed on an "AS IS" BASIS,
-#WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#See the License for the specific language governing permissions and
-#limitations under the License.
 
-class FedenaConfigurationController < ApplicationController
+
+class ConfigurationController < ApplicationController
   before_filter :login_required
   filter_access_to :all
 
@@ -33,7 +17,7 @@ class FedenaConfigurationController < ApplicationController
     @school_detail = SchoolDetail.first || SchoolDetail.new
     @countries=Country.all
     if request.post?
-      FedenaConfiguration.set_config_values(params[:FedenaConfiguration])
+      FedenaConfiguration.set_config_values(params[:fedena_configuration])
       session[:language] = nil unless session[:language].nil?
       @school_detail.logo = params[:school_detail][:school_logo] if params[:school_detail].present?
       unless @school_detail.save

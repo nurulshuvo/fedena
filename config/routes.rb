@@ -46,10 +46,6 @@ Fedena::Application.routes.draw do
     resources :exams, :member => {:save_scores => :post}
   end
 
-  #  resources :additional_exam_groups do |additional_exam_group|
-  #    additional_exam_group.resources :additional_exams , :member => { :save_additional_scores => :post }
-  #  end
-
   resources :timetables do
     resources :timetable_entries
   end
@@ -69,4 +65,8 @@ Fedena::Application.routes.draw do
   get ':controller/:action'
   get ':controller/:action/:id/:id2'
   get ':controller/:action/:id.:format'
+  post ':controller/:action/:id'
+  post ':controller/:action'
+  post ':controller/:action/:id/:id2'
+  post ':controller/:action/:id.:format'
 end

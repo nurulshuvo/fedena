@@ -1,11 +1,9 @@
+//= require jquery
+//= require jquery_ujs
+//= require jquery.ui.all
 
-document.observe("dom:loaded", function() {
-    $$('object').each(function(obj){
-        a  = document.createElement('param');
-        a.name = 'wmode';
-        a.value = 'transparent';
-        obj.appendChild(a);
+$(function(){
+    $(function() {
+        $('.date_picker').datepicker({ dateFormat: 'yy-mm-dd' });
     });
-
-    load_menu_from_plugins();
-});
+})

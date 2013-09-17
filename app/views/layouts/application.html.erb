@@ -13,11 +13,11 @@
 
   <%= stylesheet_link_tag(*get_stylesheets) %>
 
-  <%= javascript_include_tag :defaults, :cache => 'cache/javascripts/all' %>
-  <%= javascript_include_tag 'scripts/nicetitle', 'droplicious' %>
-  <%= javascript_include_tag "fckeditor/fckeditor" %>
-  <%= javascript_include_tag 'builder' %>
-  <%= javascript_include_tag 'modalbox' %>
+  <%= javascript_include_tag 'application' %>
+  <%#= javascript_include_tag :defaults, :cache => 'cache/javascripts/all' %>
+  <%#= javascript_include_tag 'scripts/nicetitle', 'droplicious' %>
+  <%#= javascript_include_tag 'builder' %>
+  <%#= javascript_include_tag 'modalbox' %>
 <%#= javascript_include_tag 'popup' %>
 
   <% FedenaPlugin::REGISTERED_HOOKS[:application_layout_header].each do |mod| %>
@@ -25,10 +25,10 @@
   <% end %>
 
   <%#= calendar_date_select_includes 'red' %>
-  <% CalendarDateSelect.format = :iso_date %>
+  <%# CalendarDateSelect.format = :iso_date %>
 
   <%= javascript_include_tag "calendar_date_select/locale/#{I18n.locale}.js" unless I18n.locale==:en %>
-  <%= javascript_include_tag 'fedena_plugin.js'%>
+  <%#= javascript_include_tag 'fedena_plugin.js'%>
 
 
   <%= yield :head %>

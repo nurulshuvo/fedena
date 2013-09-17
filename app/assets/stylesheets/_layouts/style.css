@@ -1,4 +1,6 @@
-
+/*
+ *= require jquery.ui.all
+ */
 body {
     font-family:Arial;
     margin:0;

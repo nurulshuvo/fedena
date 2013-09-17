@@ -1,20 +1,4 @@
-#Fedena
-#Copyright 2011 Foradian Technologies Private Limited
-#
-#This product includes software developed at
-#Project Fedena - http://www.projectfedena.org/
-#
-#Licensed under the Apache License, Version 2.0 (the "License");
-#you may not use this file except in compliance with the License.
-#You may obtain a copy of the License at
-#
-#  http://www.apache.org/licenses/LICENSE-2.0
-#
-#Unless required by applicable law or agreed to in writing, software
-#distributed under the License is distributed on an "AS IS" BASIS,
-#WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#See the License for the specific language governing permissions and
-#limitations under the License.
+
 
 class CoursesController < ApplicationController
   before_filter :login_required
@@ -28,14 +12,6 @@ class CoursesController < ApplicationController
   def new
     @course = Course.new
     @grade_types=Course.grading_types_as_options
-    #    gpa = FedenaConfiguration.find_by_config_key("GPA").config_value
-    #    if gpa == "1"
-    #      @grade_types << "GPA"
-    #    end
-    #    cwa = FedenaConfiguration.find_by_config_key("CWA").config_value
-    #    if cwa == "1"
-    #      @grade_types << "CWA"
-    #    end
   end
 
   def manage_course
@@ -199,20 +175,13 @@ class CoursesController < ApplicationController
   end
 
   def create
+
     @course = Course.new params[:course]
     if @course.save
       flash[:notice] = "#{t('flash1')}"
       redirect_to :action=>'manage_course'
     else
       @grade_types=Course.grading_types_as_options
-      #      gpa = FedenaConfiguration.find_by_config_key("GPA").config_value
-      #      if gpa == "1"
-      #        @grade_types << "GPA"
-      #      end
-      #      cwa = FedenaConfiguration.find_by_config_key("CWA").config_value
-      #      if cwa == "1"
-      #        @grade_types << "CWA"
-      #      end
       render 'new'
     end
   end

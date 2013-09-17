@@ -18,6 +18,7 @@
 
 class AttendancesController < ApplicationController
 
+
   before_filter :login_required
   filter_access_to :all
   before_filter :only_assigned_employee_allowed, :except => 'index'
@@ -74,8 +75,8 @@ class AttendancesController < ApplicationController
     end_date = @today.end_of_month
     if @config.config_value == 'Daily'
       @batch = Batch.find(params[:batch_id]) rescue nil
-      @students = Student.find_all_by_batch_id(@batch.id) rescue nil
-      @dates=@batch.working_days(@today) rescue nil
+      @students = Student.find_all_by_batch_id(@batch.id) rescue []
+      @dates=@batch.working_days(@today) rescue []
     else
       @sub =Subject.find params[:subject_id] rescue nil
       @batch=Batch.find(@sub.batch_id) rescue nil
@@ -83,16 +84,17 @@ class AttendancesController < ApplicationController
         elective_student_ids = StudentsSubject.find_all_by_subject_id(@sub.id).map { |x| x.student_id } rescue []
         @students = Student.find_all_by_batch_id(@batch, :conditions=>"FIND_IN_SET(id,\"#{elective_student_ids.split.join(',')}\")") rescue []
       else
-        @students = Student.find_all_by_batch_id(@batch) rescue nil
+        @students = Student.find_all_by_batch_id(@batch) rescue []
       end
-      @dates=Timetable.tte_for_range(@batch,@today,@sub) rescue nil
+      @dates=Timetable.tte_for_range(@batch,@today,@sub) rescue []
       @dates_key=@dates.keys - @batch.holiday_event_dates rescue nil
 
     end
 
-    respond_to do |format|
-      format.js
-    end
+    #respond_to do |format|
+    #  format.js
+    #end
+
   end
 
   def subject_wise_register

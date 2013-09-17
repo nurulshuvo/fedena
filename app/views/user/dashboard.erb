@@ -37,7 +37,7 @@
         :class => "option_buttons", :id => "student_attendance_button", :title => t('attendance_link_title')  %>
     </div>
     <div class="button-box">
-      <%= link_to ("<div class ='button-label'><p>#{t('settings')}</p></div>").html_safe, {:controller => "FedenaConfiguration", :action => "index"},
+      <%= link_to ("<div class ='button-label'><p>#{t('settings')}</p></div>").html_safe, {:controller => "configuration", :action => "index"},
         :class => "option_buttons", :id => "settings_button", :title => t('setting_link_title') %>
     </div>
 
@@ -209,9 +209,9 @@
       </div>
     <%end%>
 
-    <% if permitted_to? :index, :FedenaConfiguration %>
+    <% if permitted_to? :index, :configuration %>
       <div class="button-box">
-        <%= link_to "<div class ='button-label'><p>#{t('settings')}</p></div>".html_safe, {:controller => "FedenaConfiguration", :action => "index"},
+        <%= link_to "<div class ='button-label'><p>#{t('settings')}</p></div>".html_safe, {:controller => "configuration", :action => "index"},
           :class => "option_buttons", :id => "settings_button", :title => t('setting_link_title') %>
       </div>
     <% end %>

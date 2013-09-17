@@ -289,17 +289,6 @@ class Student < ActiveRecord::Base
         g.archive_guardian(archived_student.id)
       end
       self.destroy
-      #
-      #      student_exam_scores = ExamScore.find_all_by_student_id(self.id)
-      #      student_exam_scores.each do |s|
-      #        exam_score_attributes = s.attributes
-      #        exam_score_attributes.delete "id"
-      #        exam_score_attributes.delete "student_id"
-      #        exam_score_attributes["student_id"]= archived_student.id
-      #        ArchivedExamScore.create(exam_score_attributes)
-      #        s.destroy
-      #      end
-      #
     end
  
   end
