@@ -1,0 +1,7 @@
+<% if @error.nil? %>
+$('#form-errors').html('')
+$('#subjects').html("<%= j render  :partial => 'subjects' %>").show()
+$('#flash-box').html("<p class='flash-msg'><%= flash[:notice] %></p>")
+<% else %>
+$('#form-errors').html("<%= j render  :partial => 'errors', locals: {:object => @subject} %>").show()
+<% end %>

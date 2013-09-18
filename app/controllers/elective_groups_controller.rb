@@ -21,7 +21,7 @@ class ElectiveGroupsController < ApplicationController
   before_filter :login_required
   filter_access_to :all
   def index
-    @elective_groups = ElectiveGroup.for_batch(@batch.id, :include => :subjects)
+    @elective_groups = ElectiveGroup.for_batch(@batch.id)
   end
 
   def new
@@ -33,7 +33,7 @@ class ElectiveGroupsController < ApplicationController
     @elective_group.batch_id = @batch.id
     if @elective_group.save
       flash[:notice] = "#{t('flash1')}"
-      redirect_to batch_elective_groups_path(@batch)
+      redirect_to batch_electives_path(@batch)
     else
       render :action=>'new'
     end

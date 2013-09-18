@@ -38,8 +38,10 @@ Fedena::Application.routes.draw do
   get 'courses/manage_course', :controller => 'courses', :action => 'manage_course'
   get 'courses/manage_batches', :controller => 'courses', :action => 'manage_batches'
   resources :courses do
+    get :update_batch, on: :collection, as: :update_batch
     resources :batches, :collection => {:grouped_batches => [:get, :post], :create_batch_group => [:get, :post], :edit_batch_group => [:get, :post], :update_batch_group => [:get, :post], :delete_batch_group => [:get, :post], :assign_subject_amount => [:get, :post], :edit_subject_amount => [:get, :post], :destroy_subject_amount => [:get, :post]}
   end
+
 
   resources :batches, :collection => {:batches_ajax => [:get]} do
     resources :exam_groups
@@ -72,4 +74,5 @@ Fedena::Application.routes.draw do
   post ':controller/:action'
   post ':controller/:action/:id/:id2'
   post ':controller/:action/:id.:format'
+  delete ':controller/:action/:id'
 end

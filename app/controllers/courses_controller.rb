@@ -168,11 +168,9 @@ class CoursesController < ApplicationController
 
   def update_batch
     @batch = Batch.find_all_by_course_id(params[:course_name], :conditions => { :is_deleted => false, :is_active => true })
-
-    render(:update) do |page|
-      page.replace_html 'update_batch', :partial=>'update_batch'
+    respond_to do |format|
+      format.js
     end
-
   end
 
   def create

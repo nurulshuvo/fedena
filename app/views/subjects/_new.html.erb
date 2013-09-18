@@ -4,7 +4,8 @@
 <div id="grading-levels-form">
   <h4><%= @batch.full_name unless @batch.nil? %></h4>
 
-  <%= form_for @subject, remote: true do |f| %>
+  <%= form_for(@subject, remote: true) do |f| %>
+      <input type="hidden" value="kH0omsGOvshTlW2ZmVNvrnTGMqsBbfHobhEYUMmqjv8=" name="authenticity_token">
 
     <% batch_id = (@batch.nil? ? nil : @batch.id) %>
     <% elective_group_id = (@elective_group.nil? ? nil : @elective_group.id) %>
